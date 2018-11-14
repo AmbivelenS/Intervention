@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Ohtas", augments={'Accuracy+70','Pet: Accuracy+70','Pet: Haste+10%',}},
+    range="Animator P +1",
+    ammo="Automat. Oil +3",
+    head="Karagoz Capello +1",
+    body={ name="Pitre Tobe", augments={'Enhances "Overdrive" effect',}},
+    hands={ name="Rao Kote", augments={'Pet: HP+100','Pet: Accuracy+15','Pet: Damage taken -3%',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+23 Attack+23','Crit. hit damage +4%','AGI+9','Accuracy+8',}},
+    feet={ name="Rawhide Boots", augments={'HP+50','Accuracy+15','Evasion+20',}},
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Brutal Earring",
+    right_ear="Cessance Earring",
+    left_ring="Apate Ring",
+    right_ring="Rajas Ring",
+    back={ name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: "Regen"+10','System: 1 ID: 1247 Val: 0',}},
+}

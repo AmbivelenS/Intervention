@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Vampirism", augments={'STR+5','INT+6','"Occult Acumen"+7','DMG:+9',}},
+    sub="Genbu's Shield",
+    range="Eminent Flute",
+    head="Aya. Zucchetto",
+    body="Ayanmo Corazza +1",
+    hands="Aya. Manopolas",
+    legs="Aya. Cosciales +1",
+    feet="Aya. Gambieras",
+    neck="Asperity Necklace",
+    waist="Grunfeld Rope",
+    left_ear="Brutal Earring",
+    right_ear="Cessance Earring",
+    left_ring="Rajas Ring",
+    right_ring="Apate Ring",
+    back="Atheling Mantle",
+}

@@ -1,0 +1,16 @@
+sets.exported={
+    main="Legato Dagger",
+    range="Eminent Flute",
+    head="Aya. Zucchetto",
+    body="Emet Harness +1",
+    hands="Aya. Manopolas",
+    legs="Ayanmo Cosciales",
+    feet="Aya. Gambieras",
+    neck="Twilight Torque",
+    waist="Witful Belt",
+    left_ear="Brutal Earring",
+    right_ear="Handler's Earring +1",
+    left_ring="Prolix Ring",
+    right_ring="Warp Ring",
+    back="Cheviot Cape",
+}

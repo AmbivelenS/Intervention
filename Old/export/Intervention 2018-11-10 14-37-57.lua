@@ -1,0 +1,16 @@
+sets.exported={
+    main="Aettir",
+    ammo="Ginsen",
+    head={ name="Futhark Bandeau", augments={'Enhances "Battuta" effect',}},
+    body="Erilaz Surcoat",
+    hands="Aya. Manopolas",
+    legs="Eri. Leg Guards +1",
+    feet="Erilaz Greaves +1",
+    neck="Twilight Torque",
+    waist="Grunfeld Rope",
+    left_ear="Brutal Earring",
+    right_ear="Cessance Earring",
+    left_ring="Gelatinous Ring +1",
+    right_ring="Meridian Ring",
+    back="Atheling Mantle",
+}

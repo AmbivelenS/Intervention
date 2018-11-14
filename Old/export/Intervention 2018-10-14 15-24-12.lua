@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Claidheamh Soluis", augments={'Accuracy+11 Attack+11','"Dbl.Atk."+2','DMG:+16',}},
+    sub={ name="Usonmunku", augments={'Accuracy+10','DEX+7','DMG:+2',}},
+    ammo="Jukukik Feather",
+    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    body="Assim. Jubbah +2",
+    hands="Jhakri Cuffs +2",
+    legs={ name="Herculean Trousers", augments={'Accuracy+23 Attack+23','Crit. hit damage +4%','AGI+9','Accuracy+8',}},
+    feet="Aya. Gambieras",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Mache Earring",
+    left_ring="Apate Ring",
+    right_ring="Rajas Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+4','Accuracy+20 Attack+20','Crit.hit rate+10',}},
+}

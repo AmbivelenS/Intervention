@@ -1,0 +1,17 @@
+sets.exported={
+    main="Marin Staff",
+    sub="Mephitis Grip",
+    range="Eminent Flute",
+    head="Brioso Roundlet +1",
+    body="Fili Hongreline",
+    hands="Fili Manchettes",
+    legs="Orvail Pants +1",
+    feet="Fili Cothurnes",
+    neck="Twilight Torque",
+    waist="Witful Belt",
+    left_ear="Psystorm Earring",
+    right_ear="Lifestorm Earring",
+    left_ring="Prolix Ring",
+    right_ring="Warp Ring",
+    back="Swith Cape",
+}

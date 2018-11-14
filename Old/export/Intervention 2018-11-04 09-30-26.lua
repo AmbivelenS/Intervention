@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Claidheamh Soluis", augments={'Accuracy+11 Attack+11','"Dbl.Atk."+2','DMG:+16',}},
+    sub={ name="Xiutleato", augments={'Occ. atk. twice+8','Crit.hit rate+4',}},
+    ammo="Ginsen",
+    head={ name="Iuitl Headgear +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -4%',}},
+    body="Ayanmo Corazza +1",
+    hands="Aya. Manopolas",
+    legs="Aya. Cosciales +1",
+    feet="Battlecast Gaiters",
+    neck="Twilight Torque",
+    waist="Grunfeld Rope",
+    left_ear="Suppanomimi",
+    right_ear="Brutal Earring",
+    left_ring="Apate Ring",
+    right_ring="Gelatinous Ring +1",
+    back="Cheviot Cape",
+}

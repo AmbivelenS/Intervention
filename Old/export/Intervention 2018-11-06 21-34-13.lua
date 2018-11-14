@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Ohtas", augments={'Accuracy+70','Pet: Accuracy+70','Pet: Haste+10%',}},
+    range="Animator P +1",
+    ammo="Automat. Oil +3",
+    head="Tali'ah Turban +1",
+    body="Tali'ah Manteel +1",
+    hands={ name="Herculean Gloves", augments={'Attack+28','"Triple Atk."+4','DEX+10',}},
+    legs={ name="Herculean Trousers", augments={'Attack+22','"Triple Atk."+4','AGI+9','Accuracy+2',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+23','"Triple Atk."+3','AGI+10',}},
+    neck="Asperity Necklace",
+    waist="Grunfeld Rope",
+    left_ear="Cessance Earring",
+    right_ear="Brutal Earring",
+    left_ring="Apate Ring",
+    right_ring="Rajas Ring",
+    back={ name="Visucius's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: "Regen"+10','System: 1 ID: 1247 Val: 0',}},
+}

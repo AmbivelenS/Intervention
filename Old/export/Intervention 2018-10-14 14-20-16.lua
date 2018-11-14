@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Claidheamh Soluis", augments={'Accuracy+11 Attack+11','"Dbl.Atk."+2','DMG:+16',}},
+    sub={ name="Usonmunku", augments={'Accuracy+10','DEX+7','DMG:+2',}},
+    ammo="Ginsen",
+    head="Jhakri Coronal +1",
+    body="Jhakri Robe +2",
+    hands="Jhakri Cuffs +2",
+    legs="Jhakri Slops +1",
+    feet="Jhakri Pigaches +1",
+    neck="Eddy Necklace",
+    waist="Austerity Belt",
+    left_ear="Lifestorm Earring",
+    right_ear="Psystorm Earring",
+    left_ring="Perception Ring",
+    right_ring="Acumen Ring",
+    back="Seshaw Cape",
+}

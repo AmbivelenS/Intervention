@@ -1,0 +1,16 @@
+
+sets.main ={}
+sets.main.1
+sets.main.2
+
+
+sets.capacity ={}
+sets.capacity.off = set_combine(sets.main.index, 
+		{
+		}
+								)
+sets.capacity.on = set_combine(sets.main.index, 
+		{
+		back = "Mecisto. Mantle",
+		}
+							)

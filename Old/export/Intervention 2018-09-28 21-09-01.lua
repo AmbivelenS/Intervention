@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Claidheamh Soluis", augments={'Accuracy+11 Attack+11','"Dbl.Atk."+2','DMG:+16',}},
+    sub={ name="Usonmunku", augments={'Accuracy+10','DEX+7','DMG:+2',}},
+    ammo="Honed Tathlum",
+    head={ name="Iuitl Headgear +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -4%',}},
+    body="Ayanmo Corazza +1",
+    hands="Aya. Manopolas",
+    legs="Ayanmo Cosciales",
+    feet="Battlecast Gaiters",
+    neck="Twilight Torque",
+    waist="Grunfeld Rope",
+    left_ear="Dudgeon Earring",
+    right_ear="Heartseeker Earring",
+    left_ring="Gelatinous Ring",
+    right_ring="Rajas Ring",
+    back="Cheviot Cape",
+}
