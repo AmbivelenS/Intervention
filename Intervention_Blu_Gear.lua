@@ -8,7 +8,7 @@ function user_setup()
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Tizalmace','Sequence','None','Almace','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons')
+	state.Weapons:options('Main', 'MainAcc')--'Tizalmace','Sequence','None','Almace','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons'
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
 
@@ -447,13 +447,14 @@ function init_gear_sets()
 	sets.Assault = {ring1="Balrahn's Ring"}
 	
 	-- Weapons sets
-	sets.weapons.Tizalmace = {main="Tizona",sub="Almace"}
+	sets.weapons.Main = {main="Claidheamh Soluis",sub="Xiutleato"}
+	sets.weapons.MainAcc = {main="Claidheamh Soluis", sub="Usonmunku"}
 	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
-	sets.weapons.Almace = {main="Almace",sub="Sequence"}
-	sets.weapons.Sequence = {main="Sequence",sub="Almace"}
-	sets.weapons.MagicWeapons = {main="Nibiru Cudgel",sub="Nibiru Cudgel"}
-	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
-	sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
+	-- sets.weapons.Almace = {main="Almace",sub="Sequence"}
+	-- sets.weapons.Sequence = {main="Sequence",sub="Almace"}
+	-- sets.weapons.MagicWeapons = {main="Nibiru Cudgel",sub="Nibiru Cudgel"}
+	-- sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
+	-- sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets
 

@@ -54,18 +54,18 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
 		back="Intarabus's Cape",waist="Witful Belt",legs="Aya. Cosciales +1",feet="Telchine Pigaches"}
 
-	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
 	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Linos"})
 	sets.precast.FC['Magic Finale'] = set_combine(sets.precast.FC.BardSong,{range="Linos"})
-	sets.precast.FC['Horde Lullaby'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	sets.precast.FC['Horde Lullaby'] = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
 	sets.precast.FC['Horde Lullaby'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Linos"})
 	sets.precast.FC['Horde Lullaby'].AoE = set_combine(sets.precast.FC.BardSong,{range="Terpander"})
-	sets.precast.FC['Horde Lullaby II'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	sets.precast.FC['Horde Lullaby II'] = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
 	sets.precast.FC['Horde Lullaby II'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Linos"})
 	sets.precast.FC['Horde Lullaby II'].AoE = set_combine(sets.precast.FC.BardSong,{range="Terpander"})
 		
-	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
-	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
+	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
+	sets.precast.FC['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
 
 	sets.precast.FC.Daurdabla = set_combine(sets.precast.FC.BardSong, {range=info.ExtraSongInstrument})
 	sets.precast.DaurdablaDummy = sets.precast.FC.Daurdabla
@@ -114,23 +114,23 @@ function init_gear_sets()
 	sets.midcast.Madrigal = {head="Fili Calot"}
 	sets.midcast.Paeon = {}
 	sets.midcast.March = {hands="Fili Manchettes"}
-	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Marsyas"})
+	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Eminent Flute"})
 	sets.midcast.Minuet = {body="Fili Hongreline"}
 	sets.midcast.Minne = {}
 	sets.midcast.Carol = {}
 	sets.midcast["Sentinel's Scherzo"] = {} --feet="Fili Cothurnes +1" Brioso Slippers still provides more Duration
 	sets.midcast['Magic Finale'] = {range="Eminent Flute"}
-	sets.midcast.Mazurka = {range="Marsyas"}
+	sets.midcast.Mazurka = {range="Eminent Flute"}
 	
 
 	-- For song buffs (duration and AF3 set bonus)
-	sets.midcast.SongEffect = {main="Legato Dagger",sub="Genbu's Shield",range="Eminent Flute",ammo=empty,
+	sets.midcast.SongEffect = {main="Kali",sub="Genbu's Shield",range="Eminent Flute",ammo=empty,
 		head="Fili Calot",neck="Moonbow Whistle",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		body="Fili Hongreline",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Intarabus's Cape",waist="Kobo Obi",legs="Inyanga Shalwar",feet="Brioso Slippers +2"}
 
 	-- For song defbuffs (duration primary, accuracy secondary)
-	sets.midcast.SongDebuff = {main="Kali",sub="Ammurapi Shield",range="Marsyas",ammo=empty,
+	sets.midcast.SongDebuff = {main="Kali",sub="Ammurapi Shield",range="Eminent Flute",ammo=empty,
 		head="Brioso Roundlet +1",
 		body="Brioso Just. +1",
 		hands="Brioso Cuffs +2",

@@ -172,7 +172,7 @@ function init_gear_sets()
             body="Meg. Cuirie +2",hands=gear.herculean_ta_hands,ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
             back=gear.stp_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs,feet=gear.herculean_acc_feet}
 
-    sets.precast.WS['Resolution'] = set_combine(sets.precast.WS,{})
+    sets.precast.WS['Resolution'] = set_combine(sets.precast.WS,{ammo="Floestone"})
     sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc,{})
     sets.precast.WS['Resolution'].HighAcc = set_combine(sets.precast.WS.HighAcc,{})
 	sets.precast.WS['Resolution'].FullAcc = set_combine(sets.precast.WS.FullAcc,{})
@@ -358,23 +358,23 @@ function init_gear_sets()
     sets.engaged.DTLite = {ammo="Ginsen",
             head="Aya. Zucchetto",neck="Twilight torque",ear1="Brutal Earring",ear2="Cessance Earring",
             body="Ayanmo Corazza +1",hands=gear.herculean_ta_hands,ring1="Defending Ring",ring2="Patricius Ring",
-            back="Moonlight Cape",waist="Grunfeld Rope",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
+            back="Atheling Mantle",waist="Grunfeld Rope",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
     sets.engaged.SomeAcc.DTLite = {ammo="Falcon Eye",
             head="Aya. Zucchetto",neck="Twilight torque",ear1="Cessance Earring",ear2="Cessance Earring",
             body="Ayanmo Corazza +1",hands=gear.herculean_ta_hands,ring1="Defending Ring",ring2="Patricius Ring",
-            back="Moonlight Cape",waist="Grunfeld Rope",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
+            back="Atheling Mantle",waist="Grunfeld Rope",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
 	sets.engaged.Acc.DTLite = {ammo="Falcon Eye",
             head="Aya. Zucchetto",neck="Twilight torque",ear1="Telos Earring",ear2="Cessance Earring",
             body="Ayanmo Corazza +1",hands=gear.herculean_ta_hands,ring1="Defending Ring",ring2="Patricius Ring",
-            back="Moonlight Cape",waist="Grunfeld Rope",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
+            back="Atheling Mantle",waist="Grunfeld Rope",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
 	sets.engaged.HighAcc.DTLite = {ammo="Falcon Eye",
             head="Aya. Zucchetto",neck="Twilight torque",ear1="Telos Earring",ear2="Cessance Earring",
             body="Ayanmo Corazza +1",hands=gear.herculean_ta_hands,ring1="Defending Ring",ring2="Patricius Ring",
-            back="Moonlight Cape",waist="Olseni Belt",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
+            back="Atheling Mantle",waist="Olseni Belt",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
 	sets.engaged.FullAcc.DTLite = {ammo="Falcon Eye",
             head="Aya. Zucchetto",neck="Twilight torque",ear1="Telos Earring",ear2="Zennaroi Earring",
             body="Ayanmo Corazza +1",hands=gear.herculean_ta_hands,ring1="Defending Ring",ring2="Patricius Ring",
-            back="Moonlight Cape",waist="Olseni Belt",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
+            back="Atheling Mantle",waist="Olseni Belt",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
 	
     sets.engaged.Tank = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Twilight torque",ear1="Genmei Earring",ear2="Ethereal Earring",
