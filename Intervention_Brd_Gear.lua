@@ -213,7 +213,7 @@ function init_gear_sets()
 	sets.idle = {main="Terra's Staff",sub="Oneiros Grip",ammo="Staunch Tathlum",
 		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flume Belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+		back="Umbra Cape",waist="Flume Belt",legs="Assid. Pants +1",feet="Fili Cothurnes"}
 
 	sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",ammo="Staunch Tathlum",
 		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
@@ -248,7 +248,7 @@ function init_gear_sets()
 	sets.engaged = {main="Aeneas",sub="Genbu's Shield",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
 		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Rajas Ring",ring2="Apate Ring",
-		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Battlecast Gaiters"}
+		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 	sets.engaged.Acc = {main="Aeneas",sub="Genbu's Shield",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
 		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
@@ -256,11 +256,11 @@ function init_gear_sets()
 	sets.engaged.DW = {main="Aeneas",sub="Blurred Knife +1",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
 		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Petrov Ring",ring2="Ilabrat Ring",
-		back="Bleating Mantle",waist="Reiki Yotai",legs="Aya. Cosciales +1",feet="Battlecast Gaiters"}
+		back="Bleating Mantle",waist="Reiki Yotai",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 	sets.engaged.DW.Acc = {main="Aeneas",sub="Blurred Knife +1",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
 		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-		back="Bleating Mantle",waist="Reiki Yotai",legs="Aya. Cosciales +1",feet="Battlecast Gaiters"}
+		back="Bleating Mantle",waist="Reiki Yotai",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 end
 
 -- Select default macro book on initial load or subjob change.
