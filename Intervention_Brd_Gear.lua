@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','PDT')
-	state.Weapons:options('Normal','DD','DualWeapons','Swords','NukeWeapons')
+	state.Weapons:options('Normal','DD') --'DualWeapons','Swords','NukeWeapons'
 
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = 'Terpander'
@@ -74,7 +74,7 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	
 	sets.precast.JA.Nightingale = {feet="Bihu Slippers"}
-	sets.precast.JA.Troubadour = {body="Bihu Jstcorps"}
+	sets.precast.JA.Troubadour = {body="Bihu Justaucorps"}
 	sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions"}
 
 	-- Waltz set (chr and vit)
@@ -206,19 +206,19 @@ function init_gear_sets()
 
 	-- Resting sets
 	sets.resting = {main="Terra's Staff",sub="Oneiros Grip",ammo="Staunch Tathlum",
-		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flume Belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+		head=empty,neck="Twilight Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Gelatinous Ring +1",ring2="Warden's Ring",
+		back="Solemnity Cape",waist="Flume Belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 	
 	sets.idle = {main="Terra's Staff",sub="Oneiros Grip",ammo="Staunch Tathlum",
-		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flume Belt",legs="Assid. Pants +1",feet="Fili Cothurnes"}
+		head=empty,neck="Twilight Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Gelatinous Ring +1",ring2="Warden's Ring",
+		back="Solemnity Cape",waist="Flume Belt",legs="Assid. Pants +1",feet="Fili Cothurnes"}
 
 	sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",ammo="Staunch Tathlum",
-		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flume Belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+		head=empty,neck="Twilight Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Gelatinous Ring +1",ring2="Warden's Ring",
+		back="Solemnity Cape",waist="Flume Belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 	
 	
 	-- Weapons sets
@@ -227,14 +227,14 @@ function init_gear_sets()
 	-- Defense sets
 
 	sets.defense.PDT = {main="Terra's Staff", sub="Umbra Strap",ammo="Staunch Tathlum",
-		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flume Belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+		head="Aya. Zucchetto +1",neck="Twilight Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Warden's Ring",
+		back="Solemnity Cape",waist="Flume Belt",legs="Assid. Pants +1",feet="Aya. Gambieras +1"}
 
 	sets.defense.MDT = {main="Terra's Staff", sub="Umbra Strap",ammo="Staunch Tathlum",
-		head=empty,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flume Belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+		head="Aya. Zucchetto +1",neck="Twilight Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Warden's Ring",
+		back="Solemnity Cape",waist="Flume Belt",legs="Assid. Pants +1",feet="Aya. Gambieras +1"}
 
 	sets.Kiting = {}
 
