@@ -32,7 +32,6 @@ function user_setup()
 	send_command('bind ^\\\\ input /ma "Protect V" <t>')
 	send_command('bind @\\\\ input /ma "Shell V" <t>')
 	send_command('bind !\\\\ input /ma "Reraise III" <me>')
-	
     select_default_macro_book()
 end
 
@@ -219,7 +218,7 @@ function init_gear_sets()
     -- Elemental Magic sets are default for handling low-tier nukes.
     sets.midcast['Elemental Magic'] = {main="Akademos",sub="Niobid Strap",ammo="Dosis Tathlum",
         head="Jhakri Coronal +1", neck="Sanctity necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Jhakri Robe +2", hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
+        body="Jhakri Robe +2", hands="Jhakri Cuffs +2",ring1="Acumen Ring",ring2="Jhakri Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
 
     sets.midcast['Elemental Magic'].Resistant = {main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
@@ -369,13 +368,14 @@ end
 -- Select default macro book on initial load or subjob change.
 -- Default macro set/book
 function select_default_macro_book()
-	if player.sub_job == 'RDM' then
-		set_macro_page(1, 18)
-	elseif player.sub_job == 'BLM' then
-		set_macro_page(1, 18)
-	elseif player.sub_job == 'WHM' then
-		set_macro_page(1, 18)
-	else
-		set_macro_page(1, 18)
-	end
+	set_macro_page(1, 17)
+	-- if player.sub_job == 'RDM' then
+		-- set_macro_page(1, 18)
+	-- elseif player.sub_job == 'BLM' then
+		-- set_macro_page(1, 18)
+	-- elseif player.sub_job == 'WHM' then
+		-- set_macro_page(1, 18)
+	-- else
+		-- set_macro_page(1, 18)
+	-- end
 end

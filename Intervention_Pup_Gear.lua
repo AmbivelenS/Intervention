@@ -71,7 +71,7 @@ function init_gear_sets()
     sets.precast.FC = {
 	head=gear.herculean_fc_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 	body="Zendik Robe",hands=gear.herculean_dt_hands,ring1="Lebeche Ring",ring2="Prolix Ring",
-	back="Perimede Cape",waist="Isa Belt",legs="Rawhide Trousers",feet="Regal Pumps +1"}
+	back="Swith Cape",waist="Isa Belt",legs="Orvail Pants +1",feet="Regal Pumps +1"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads"})
 
@@ -176,7 +176,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {
 	head=gear.herculean_fc_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 	body="Zendik Robe",hands=gear.herculean_dt_hands,ring1="Lebeche Ring",ring2="Prolix Ring",
-	back="Perimede Cape",waist="Isa Belt",legs="Rawhide Trousers",feet="Regal Pumps +1"}
+	back="Swith Cape",waist="Isa Belt",legs="Orvail Pants +1",feet="Regal Pumps +1"}
         
 	sets.midcast.Dia = set_combine(sets.midcast.FastRecast, sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast.FastRecast, sets.TreasureHunter)
@@ -188,7 +188,7 @@ function init_gear_sets()
     sets.midcast.Pet.Cure = {}
 	sets.midcast.Pet['Enfeebling Magic'] = {neck="Adad Amulet",ear1="Enmerkar Earring",ear2="Handler's Earring +1",body="Taeon Tabard",hands="Regimen Mittens",ring1="Varar Ring +1",ring2="Varar Ring +1",waist="Incarnation Sash",legs="Tali'ah Sera. +2"}
     sets.midcast.Pet['Elemental Magic'] = {neck="Adad Amulet",ear1="Enmerkar Earring",ear2="Handler's Earring +1",body="Taeon Tabard",hands="Regimen Mittens",ring1="Varar Ring +1",ring2="Varar Ring +1",waist="Incarnation Sash",legs="Tali'ah Sera. +2"}
-	sets.midcast.Pet.PetWSGear = {neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",body="Taeon Tabard",hands="Regimen Mittens",ring1="Varar Ring +1",ring2="Varar Ring +1",back="Dispersal Mantle",waist="Incarnation Sash",legs="Tali'ah Sera. +2"}
+	sets.midcast.Pet.PetWSGear = {neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Handler's Earring +1",body="Taeon Tabard",hands="Regimen Mittens",ring1="Varar Ring +1",ring2="Varar Ring +1",back="Dispersal Mantle",waist="Incarnation Sash",legs="Tali'ah Sera. +2"}
 	
     sets.midcast.Pet.PetWSGear.Ranged = set_combine(sets.midcast.Pet.PetWSGear, {})
 	sets.midcast.Pet.PetWSGear.Melee = set_combine(sets.midcast.Pet.PetWSGear, {})
@@ -218,24 +218,24 @@ function init_gear_sets()
 	sets.idle.Refresh = {
         head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body="Vrikodara Jupon",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Fucho-no-Obi",legs="Rawhide Trousers",feet="Hippo. Socks +1"}
+        back="Moonlight Cape",waist="Fucho-no-Obi",legs="Orvail Pants +1",feet=gear.herculean_refresh_feet}
 		
     -- Set for idle while pet is out (eg: pet regen gear)
     sets.idle.Pet = {
         head="Rawhide Mask",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
         body="Taeon Tabard",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Isa Belt",legs="Tali'ah Sera. +2",feet="Hippo. Socks +1"}
+        back="Moonlight Cape",waist="Isa Belt",legs="Tali'ah Sera. +1",feet=gear.herculean_refresh_feet}
 
     -- Idle sets to wear while pet is engaged
     sets.idle.Pet.Engaged = {
-        head="Anwig Salade",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-        body="Taeon Tabard",hands="Regimen Mittens",ring1="Varar Ring +1",ring2="Varar Ring +1",
-        back="Visucius's Mantle",waist="Klouskap Sash",legs="Tali'ah Sera. +2",feet="Tali'ah Crackows +2"}
+        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
+        body="Taeon Tabard",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
+        back="Visucius's Mantle",waist="Hurch'lan Sash",legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
 
     sets.idle.Pet.Engaged.Ranged = set_combine(sets.idle.Pet.Engaged, {})
 	sets.idle.Pet.Engaged.Melee = set_combine(sets.idle.Pet.Engaged, {})
-	sets.idle.Pet.Engaged.Tank = set_combine(sets.idle.Pet.Engaged, {waist="Isa Belt",ear2="Handler's Earring +1"})
-	sets.idle.Pet.Engaged.LightTank = set_combine(sets.idle.Pet.Engaged, {waist="Isa Belt",ear2="Handler's Earring +1"})
+	sets.idle.Pet.Engaged.Tank = set_combine(sets.idle.Pet.Engaged, {head="Anwig Salade",hands="Rao Kote", feet="Rao Sune-Ate", waist="Isa Belt",ear2="Handler's Earring +1"})
+	sets.idle.Pet.Engaged.LightTank = set_combine(sets.idle.Pet.Engaged, {head="Anwig Salade",hands="Rao Kote", feet="Rao Sune-Ate", waist="Isa Belt",ear2="Handler's Earring +1"})
     sets.idle.Pet.Engaged.Magic = set_combine(sets.idle.Pet.Engaged, {})
 	sets.idle.Pet.Engaged.Heal = sets.idle.Pet.Engaged.Magic
 	sets.idle.Pet.Engaged.Nuke = sets.idle.Pet.Engaged.Magic
@@ -269,19 +269,19 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {
-        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
+        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Cessance Earring",ear2="Telos Earring",
         body="Sayadio's Kaftan",hands="Ryuo Tekko",ring1="Niqmaddu Ring",ring2="Epona's Ring",
         back="Visucius's Mantle",waist="Windbuffet Belt +1",legs="Ryuo Hakama",feet=gear.herculean_ta_feet}
     sets.engaged.Acc = {
-        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
+        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Cessance Earring",ear2="Telos Earring",
         body="Sayadio's Kaftan",hands="Ryuo Tekko",ring1="Niqmaddu Ring",ring2="Ramuh Ring +1",
         back="Visucius's Mantle",waist="Grunfeld Rope",legs="Ryuo Hakama",feet=gear.herculean_ta_feet}
     sets.engaged.FullAcc = {
-        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
+        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Cessance Earring",ear2="Telos Earring",
         body="Sayadio's Kaftan",hands="Ryuo Tekko",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back="Visucius's Mantle",waist="Grunfeld Rope",legs="Hiza. Hizayoroi +2",feet=gear.herculean_acc_feet}
 	sets.engaged.Fodder = {
-        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
         body=gear.herculean_wsd_body,hands="Ryuo Tekko",ring1="Niqmaddu Ring",ring2="Epona's Ring",
         back="Visucius's Mantle",waist="Windbuffet Belt +1",legs="Ryuo Hakama",feet=gear.herculean_ta_feet}
     sets.engaged.DT = {
@@ -301,21 +301,21 @@ function init_gear_sets()
         body=gear.herculean_wsd_body,hands="Ryuo Tekko",ring1="Niqmaddu Ring",ring2="Regal Ring",
         back="Visucius's Mantle",waist="Grunfeld Rope",legs="Hiza. Hizayoroi +2",feet=gear.herculean_ta_feet}
     sets.engaged.Pet = {
-        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
-        body="Sayadio's Kaftan",hands="Ryuo Tekko",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        back="Visucius's Mantle",waist="Klouskap Sash",legs="Ryuo Hakama",feet=gear.herculean_ta_feet}
+        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
+        body="Taeon Tabard",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
+        back="Visucius's Mantle",waist="Hurch'lan Sash",legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
     sets.engaged.Acc.Pet = {
-        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
-        body="Sayadio's Kaftan",hands="Ryuo Tekko",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        back="Visucius's Mantle",waist="Klouskap Sash",legs="Ryuo Hakama",feet=gear.herculean_ta_feet}
+        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
+        body="Taeon Tabard",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
+        back="Visucius's Mantle",waist="Hurch'lan Sash",legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
     sets.engaged.FullAcc.Pet = {
-        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
-        body="Sayadio's Kaftan",hands="Ryuo Tekko",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        back="Visucius's Mantle",waist="Klouskap Sash",legs="Ryuo Hakama",feet=gear.herculean_ta_feet}
+        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
+        body="Taeon Tabard",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
+        back="Visucius's Mantle",waist="Hurch'lan Sash",legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
     sets.engaged.Fodder.Pet = {
-        head="Tali'ah Turban +2",neck="Shulmanu Collar",ear1="Cessance Earring",ear2="Telos Earring",
-        body="Sayadio's Kaftan",hands="Ryuo Tekko",ring1="Niqmaddu Ring",ring2="Epona's Ring",
-        back="Visucius's Mantle",waist="Klouskap Sash",legs="Ryuo Hakama",feet=gear.herculean_ta_feet}
+        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
+        body="Taeon Tabard",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
+        back="Visucius's Mantle",waist="Hurch'lan Sash",legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
 		
 	-- Weapons sets
 	sets.weapons.PetWeapons = {main="Ohtas",range="Animator P +1",}
@@ -325,13 +325,14 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
     -- Default macro set/book
-    if player.sub_job == 'DNC' then
-        set_macro_page(2, 20)
-    elseif player.sub_job == 'NIN' then
-        set_macro_page(2, 20)
-    elseif player.sub_job == 'THF' then
-        set_macro_page(2, 20)
-    else
-        set_macro_page(2, 20)
-    end
+	set_macro_page(1, 18)
+    -- if player.sub_job == 'DNC' then
+        -- set_macro_page(2, 20)
+    -- elseif player.sub_job == 'NIN' then
+        -- set_macro_page(2, 20)
+    -- elseif player.sub_job == 'THF' then
+        -- set_macro_page(2, 20)
+    -- else
+        -- set_macro_page(2, 20)
+    -- end
 end

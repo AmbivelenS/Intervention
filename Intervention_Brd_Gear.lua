@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','PDT')
-	state.Weapons:options('None','Aeneas','DualWeapons','Swords','NukeWeapons')
+	state.Weapons:options('Normal','DD','DualWeapons','Swords','NukeWeapons')
 
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = 'Terpander'
@@ -55,13 +55,13 @@ function init_gear_sets()
 		back="Intarabus's Cape",waist="Witful Belt",legs="Aya. Cosciales +1",feet="Bihu Slippers"}
 
 	sets.precast.FC.SongDebuff = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
-	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Linos"})
-	sets.precast.FC['Magic Finale'] = set_combine(sets.precast.FC.BardSong,{range="Linos"})
+	sets.precast.FC.SongDebuff.Resistant = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
+	sets.precast.FC['Magic Finale'] = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
 	sets.precast.FC['Horde Lullaby'] = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
-	sets.precast.FC['Horde Lullaby'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Linos"})
+	sets.precast.FC['Horde Lullaby'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
 	sets.precast.FC['Horde Lullaby'].AoE = set_combine(sets.precast.FC.BardSong,{range="Terpander"})
-	sets.precast.FC['Horde Lullaby II'] = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
-	sets.precast.FC['Horde Lullaby II'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Linos"})
+	sets.precast.FC['Horde Lullaby II'] = set_combine(sets.precast.FC.BardSong,{range="Terpander"})
+	sets.precast.FC['Horde Lullaby II'].Resistant = set_combine(sets.precast.FC.BardSong,{range="Terpander"})
 	sets.precast.FC['Horde Lullaby II'].AoE = set_combine(sets.precast.FC.BardSong,{range="Terpander"})
 		
 	sets.precast.FC.Mazurka = set_combine(sets.precast.FC.BardSong,{range="Eminent Flute"})
@@ -84,7 +84,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Hasty Pinion +1",
 		head="Aya. Zucchetto +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
-		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
 		back="Ground. Mantle +1",waist="Grunfeld Rope",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 		
 	-- Swap to these on Moonshade using WS if at 3000 TP
@@ -108,14 +108,14 @@ function init_gear_sets()
 	sets.midcast['Horde Lullaby'] = {range="Eminent Flute"}
 	sets.midcast['Horde Lullaby'].Resistant = {range="Eminent Flute"}
 	sets.midcast['Horde Lullaby'].AoE = {range="Terpander"}
-	sets.midcast['Horde Lullaby II'] = {range="Eminent Flute"}
-	sets.midcast['Horde Lullaby II'].Resistant = {range="Eminent Flute"}
+	sets.midcast['Horde Lullaby II'] = {range="Terpander"}
+	sets.midcast['Horde Lullaby II'].Resistant = {range="Terpander"}
 	sets.midcast['Horde Lullaby II'].AoE = {range="Terpander"}
 	sets.midcast.Madrigal = {head="Fili Calot"}
 	sets.midcast.Paeon = {}
 	sets.midcast.March = {hands="Fili Manchettes"}
 	sets.midcast['Honor March'] = set_combine(sets.midcast.March,{range="Eminent Flute"})
-	sets.midcast.Minuet = {body="Fili Hongreline"}
+	sets.midcast.Minuet = {body="Fili Hongreline +1"}
 	sets.midcast.Minne = {}
 	sets.midcast.Carol = {}
 	sets.midcast["Sentinel's Scherzo"] = {} --feet="Fili Cothurnes +1" Brioso Slippers still provides more Duration
@@ -126,15 +126,15 @@ function init_gear_sets()
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main="Kali",sub="Genbu's Shield",range="Eminent Flute",ammo=empty,
 		head="Fili Calot",neck="Moonbow Whistle",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
-		body="Fili Hongreline",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
-		back="Intarabus's Cape",waist="Kobo Obi",legs="Inyanga Shalwar",feet="Brioso Slippers +2"}
+		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
+		back="Intarabus's Cape",waist="Kobo Obi",legs="Inyanga Shalwar +2",feet="Brioso Slippers +2"}
 
 	-- For song defbuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {main="Kali",sub="Ammurapi Shield",range="Eminent Flute",ammo=empty,
-		head="Brioso Roundlet +1",
-		body="Brioso Just. +1",
+		head="Brioso Roundlet +2",
+		body="Brioso Just. +2",
 		hands="Brioso Cuffs +2",
-		legs="Brioso Cann. +1",
+		legs="Brioso Cann. +2",
 		feet="Brioso Slippers +2",
 		neck="Moonbow Whistle",
 		left_ear="Lifestorm Earring",
@@ -143,10 +143,10 @@ function init_gear_sets()
 
 	-- For song defbuffs (accuracy primary, duration secondary)
 	sets.midcast.SongDebuff.Resistant = {main="Kali",sub="Ammurapi Shield",range="Eminent Flute",ammo=empty,
-		head="Brioso Roundlet +1",
-		body="Brioso Just. +1",
+		head="Brioso Roundlet +2",
+		body="Brioso Just. +2",
 		hands="Brioso Cuffs +2",
-		legs="Brioso Cann. +1",
+		legs="Brioso Cann. +2",
 		feet="Brioso Slippers +2",
 		neck="Moonbow Whistle",
 		left_ear="Lifestorm Earring",
@@ -154,10 +154,10 @@ function init_gear_sets()
 
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",range="Terpander",ammo=empty,
-		head="Brioso Roundlet +1",
-		body="Brioso Just. +1",
+		head="Brioso Roundlet +2",
+		body="Brioso Just. +2",
 		hands="Brioso Cuffs +2",
-		legs="Brioso Cann. +1",
+		legs="Brioso Cann. +2",
 		feet="Brioso Slippers +2",
 		neck="Moonbow Whistle",
 		left_ear="Lifestorm Earring",
@@ -220,6 +220,10 @@ function init_gear_sets()
 		body="Respite Cloak",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
 		back="Umbra Cape",waist="Flume Belt",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 	
+	
+	-- Weapons sets
+	sets.weapons.normal = {main="Kali",sub="Genbu's Shield"}
+	sets.weapons.DD = {main="Izhiikoh",sub="Genbu's Shield"}
 	-- Defense sets
 
 	sets.defense.PDT = {main="Terra's Staff", sub="Umbra Strap",ammo="Staunch Tathlum",
@@ -247,19 +251,19 @@ function init_gear_sets()
 	
 	sets.engaged = {main="Aeneas",sub="Genbu's Shield",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Rajas Ring",ring2="Apate Ring",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Rajas Ring",ring2="Apate Ring",
 		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 	sets.engaged.Acc = {main="Aeneas",sub="Genbu's Shield",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
-		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
 		back="Letalis Mantle",waist="Olseni Belt",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 	sets.engaged.DW = {main="Aeneas",sub="Blurred Knife +1",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
-		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Petrov Ring",ring2="Ilabrat Ring",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Petrov Ring",ring2="Ilabrat Ring",
 		back="Bleating Mantle",waist="Reiki Yotai",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 	sets.engaged.DW.Acc = {main="Aeneas",sub="Blurred Knife +1",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
 		back="Bleating Mantle",waist="Reiki Yotai",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 end
 
