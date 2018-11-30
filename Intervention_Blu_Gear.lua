@@ -8,11 +8,11 @@ function user_setup()
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Main', 'MainAcc', 'MAB')--'Tizalmace','Sequence','None','Almace','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons'
+	state.Weapons:options('Main', 'MainAcc','MaccWeapons', 'MAB')--'Tizalmace','Sequence','None','Almace','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons'
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
 
-	gear.da_jse_back = {name="Rosmerta's Cape", augments={'DEX+4','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	gear.da_jse_back = {name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 	gear.stp_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
 	gear.crit_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}
 	gear.wsd_jse_back = {name="Rosmerta's Cape",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
@@ -454,7 +454,7 @@ function init_gear_sets()
 	-- sets.weapons.Almace = {main="Almace",sub="Sequence"}
 	-- sets.weapons.Sequence = {main="Sequence",sub="Almace"}
 	-- sets.weapons.MagicWeapons = {main="Nibiru Cudgel",sub="Nibiru Cudgel"}
-	-- sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
+	sets.weapons.MaccWeapons = {main="Iris",sub="Iris"}
 	-- sets.weapons.HybridWeapons = {main="Vampirism",sub="Vampirism"}
 
 	-- Engaged sets

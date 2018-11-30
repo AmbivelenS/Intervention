@@ -25,7 +25,7 @@ gear.chironic_nuke_feet = {name="Chironic Slippers",augments={'Mag. Acc.+25 "Mag
 gear.chironic_refresh_feet = {name="Chironic Slippers",augments={'Pet: Mag. Acc.+18 Pet: "Mag.Atk.Bns."+18','Pet: Mag. Acc.+3','"Refresh"+1','Accuracy+13 Attack+13','Mag. Acc.+8 "Mag.Atk.Bns."+8',}}
 
 gear.herculean_fc_head = {name="Herculean Helm",} --augments={'"Fast Cast"+6','"Mag.Atk.Bns."+13',
-gear.herculean_nuke_head = {name="Herculean Helm",augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Enmity-3','INT+9','"Mag.Atk.Bns."+13',}}
+gear.herculean_nuke_head = {name="Herculean Helm",augments={'"Mag.Atk.Bns."+29','DEX+6','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
 gear.herculean_ta_hands = {name="Herculean Gloves",augments={'Attack+28','"Triple Atk."+4','DEX+10',}}
 gear.herculean_dt_hands = {name="Herculean Gloves",augments={'Attack+4','Damage taken-4%',}}
 gear.herculean_refresh_hands = {name="Herculean Gloves",augments={'Enmity+2','Pet: "Store TP"+4','"Refresh"+1',}}
@@ -37,11 +37,12 @@ gear.herculean_dt_legs = {name="Herculean Trousers",augments={'Attack+15','Damag
 gear.herculean_wsd_legs = {name="Herculean Trousers",augments={'Weapon skill damage +5%','DEX+8','Accuracy+13','Attack+14',}}
 gear.herculean_nuke_legs = {name="Herculean Trousers",augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Damage taken-2%','"Mag.Atk.Bns."+14',}}
 gear.herculean_acc_feet = {name="Herculean Boots",augments={'Accuracy+25 Attack+25','Crit. hit damage +1%','DEX+10','Accuracy+14','Attack+1',}}
-gear.herculean_ta_feet = {name="Herculean Boots",augments={'Accuracy+23','"Triple Atk."+3','AGI+10',}}
+gear.herculean_ta_feet = {name="Herculean Boots",augments={'Accuracy+14 Attack+14','"Triple Atk."+3','STR+10','Accuracy+11','Attack+1',}}
 gear.herculean_dt_feet = {name="Herculean Boots",augments={'Damage taken-4%','MND+7','Attack+6',}}
+gear.herculean_phalanx =  { name="Herculean Boots", augments={'"Mag.Atk.Bns."+3','Pet: Attack+8 Pet: Rng.Atk.+8','Phalanx +3','Accuracy+5 Attack+5','Mag. Acc.+7 "Mag.Atk.Bns."+7',}}
 gear.herculean_wsd_feet = {name="Herculean Boots",augments={'Accuracy+23 Attack+23','Weapon skill damage +5%','DEX+10','Accuracy+10','Attack+1',}}
 gear.herculean_waltz_feet = {name="Herculean Boots",augments={'Attack+10','"Waltz" potency +10%','AGI+4','Accuracy+9',}}
-gear.herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+23','Rng.Acc.+14','Phalanx +1','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
+gear.herculean_nuke_feet = {name="Herculean Boots",augments={'"Mag.Atk.Bns."+25','Accuracy+23','Magic burst dmg.+2%','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
 gear.herculean_refresh_feet = {name="Herculean Boots",augments={'DEX+9','Pet: CHR+8','"Refresh"+1','Accuracy+17 Attack+17','Mag. Acc.+12 "Mag.Atk.Bns."+12',}}
 
 gear.merlinic_nuke_head = {name="Merlinic Hood",augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','INT+15','Mag. Acc.+3','"Mag.Atk.Bns."+13',}}
