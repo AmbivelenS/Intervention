@@ -53,6 +53,7 @@ gear.merlinic_magpact_hands = {name="Merlinic Dastanas",augments={'Pet: Mag. Acc
 gear.merlinic_physpact_hands = {name="Merlinic Dastanas",augments={'Pet: Accuracy+28 Pet: Rng. Acc.+28','Blood Pact Dmg.+10','Pet: STR+7','Pet: Mag. Acc.+6',}}
 gear.merlinic_occult_hands = {name="Merlinic Dastanas",augments={'"Mag.Atk.Bns."+25','"Occult Acumen"+11','CHR+9',}}
 gear.merlinic_nuke_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','"Conserve MP"+1','INT+11','Mag. Acc.+3','"Mag.Atk.Bns."+15',}}
+gear.merlinic_burst_feet ={ name="Merlinic Crackows", augments={'Mag. Acc.+8 "Mag.Atk.Bns."+8','Magic burst dmg.+11%','MND+4','"Mag.Atk.Bns."+7',}}
 gear.merlinic_aspir_feet = {name="Merlinic Crackows",augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +10','Mag. Acc.+15',}}
 gear.merlinic_treasure_feet = {name="Merlinic Crackows",augments={'Accuracy+5','"Snapshot"+2','"Treasure Hunter"+2','Mag. Acc.+11 "Mag.Atk.Bns."+11',}}
 gear.merlinic_refresh_feet = {name="Merlinic Crackows",augments={'Pet: DEX+7','Pet: Mag. Acc.+7','"Refresh"+2','Accuracy+20 Attack+20',}}

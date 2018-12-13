@@ -83,7 +83,7 @@ function init_gear_sets()
 	sets.RecoverMP = {body="Seidr Cotehardie"}
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {main="Akademos",neck="Mizu. Kubikazari",hands="Jhakri Cuffs +2",ring1="Mujin Band",ring2="Locus Ring",feet="Jhakri Pigaches +1"}
+    sets.MagicBurst = {main="Akademos",neck="Mizu. Kubikazari",hands="Jhakri Cuffs +2",ring1="Mujin Band",ring2="Locus Ring",feet=gear.merlinic_burst_feet}
 	
 	-- Gear for specific elemental nukes.
 	sets.element.Wind = {main="Marin Staff +1"}
@@ -94,7 +94,7 @@ function init_gear_sets()
     sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		body="Zendik Robe",hands="Gende. Gages +1",ring1="Jhakri Ring",ring2="Prolix Ring",
-		back="Swith Cape +1",waist="Witful Belt",legs="Orvail Pants +1",feet="Regal Pumps +1"}
+		back="Swith Cape +1",waist="Witful Belt",legs="Orvail Pants +1",feet="Merlinic Crackows"}
 		
     sets.midcast.Cure = {main="Serenity",sub="Curatio Grip",ammo="Hasty Pinion +1",
         head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
@@ -135,7 +135,7 @@ function init_gear_sets()
 	
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Nahtirah Hat"})
 	
-	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Genbu's Shield",head="Nahtirah Hat",hands="Jhakri Cuffs +2",waist="Emphatikos Rope",legs="Shedir Seraweels"})
+	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {main="Vadose Rod",sub="Genmei Shield",head="Nahtirah Hat",hands="Jhakri Cuffs +2",waist="Emphatikos Rope",legs="Shedir Seraweels"})
 	
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {legs="Shedir Seraweels"})
 
@@ -279,7 +279,7 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
+    sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
         head="Jhakri Coronal +1",neck="Twilight Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Gelatinous ring +1",
         back="Umbra Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
@@ -291,7 +291,7 @@ function init_gear_sets()
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {feet="Hippo. Socks +1"})
 
-    sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
+    sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
         head="Jhakri Coronal +1",neck="Twilight Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Gelatinous ring +1",
         back="Umbra Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
@@ -328,7 +328,7 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     -- Normal melee group
-    sets.engaged = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
+    sets.engaged = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
         head="Jhakri Coronal +1",neck="Twilight Torque",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Sheltered Ring",
         back="Umbra Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
@@ -355,7 +355,7 @@ function init_gear_sets()
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff['Light Arts'] = {} --legs="Academic's Pants +3"
-	sets.buff['Dark Arts'] = {} --body="Academic's Gown +3"
+	sets.buff['Dark Arts'] = {body="Academic's Gown +2"} --body="Academic's Gown +3"
 
     sets.buff.FullSublimation = {}
     sets.buff.PDTSublimation = {}

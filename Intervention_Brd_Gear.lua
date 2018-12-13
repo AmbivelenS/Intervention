@@ -3,7 +3,7 @@ function user_setup()
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant','AoE')
     state.IdleMode:options('Normal','PDT')
-	state.Weapons:options('Normal','DD') --'DualWeapons','Swords','NukeWeapons'
+	state.Weapons:options('None','Normal','DD') --'DualWeapons','Swords','NukeWeapons'
 
 	-- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = 'Terpander'
@@ -32,7 +32,7 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Weapons sets
-	sets.weapons.Main = {main="Izhiikoh",sub="Genbu's Shield"}
+	sets.weapons.Main = {main="Izhiikoh",sub="Genmei Shield"}
 	sets.weapons.DualWeapons = {main="Izhiikoh",sub="Demersal Degen"}
 	sets.weapons.Swords = {main="Vampirism",sub="Demersal Degen"}
 	sets.weapons.NukeWeapons = {main="Malevolence",sub="Malevolence"}
@@ -124,7 +124,7 @@ function init_gear_sets()
 	
 
 	-- For song buffs (duration and AF3 set bonus)
-	sets.midcast.SongEffect = {main="Kali",sub="Genbu's Shield",range="Eminent Flute",ammo=empty,
+	sets.midcast.SongEffect = {main="Kali",sub="Genmei Shield",range="Eminent Flute",ammo=empty,
 		head="Fili Calot",neck="Moonbow Whistle",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Intarabus's Cape",waist="Kobo Obi",legs="Inyanga Shalwar +2",feet="Brioso Slippers +2"}
@@ -132,9 +132,9 @@ function init_gear_sets()
 	-- For song defbuffs (duration primary, accuracy secondary)
 	sets.midcast.SongDebuff = {main="Kali",sub="Ammurapi Shield",range="Eminent Flute",ammo=empty,
 		head="Brioso Roundlet +2",
-		body="Brioso Just. +2",
+		body="Brioso Justau. +2",
 		hands="Brioso Cuffs +2",
-		legs="Brioso Cann. +2",
+		legs="Brioso Cannions +2",
 		feet="Brioso Slippers +2",
 		neck="Moonbow Whistle",
 		left_ear="Lifestorm Earring",
@@ -144,9 +144,9 @@ function init_gear_sets()
 	-- For song defbuffs (accuracy primary, duration secondary)
 	sets.midcast.SongDebuff.Resistant = {main="Kali",sub="Ammurapi Shield",range="Eminent Flute",ammo=empty,
 		head="Brioso Roundlet +2",
-		body="Brioso Just. +2",
+		body="Brioso Justau. +2",
 		hands="Brioso Cuffs +2",
-		legs="Brioso Cann. +2",
+		legs="Brioso Cannions +2",
 		feet="Brioso Slippers +2",
 		neck="Moonbow Whistle",
 		left_ear="Lifestorm Earring",
@@ -155,9 +155,9 @@ function init_gear_sets()
 	-- Song-specific recast reduction
 	sets.midcast.SongRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",range="Terpander",ammo=empty,
 		head="Brioso Roundlet +2",
-		body="Brioso Just. +2",
+		body="Brioso Justau. +2",
 		hands="Brioso Cuffs +2",
-		legs="Brioso Cann. +2",
+		legs="Brioso Cannions +2",
 		feet="Brioso Slippers +2",
 		neck="Moonbow Whistle",
 		left_ear="Lifestorm Earring",
@@ -222,8 +222,9 @@ function init_gear_sets()
 	
 	
 	-- Weapons sets
-	sets.weapons.normal = {main="Kali",sub="Genbu's Shield"}
-	sets.weapons.DD = {main="Izhiikoh",sub="Genbu's Shield"}
+	sets.weapons.None = {}
+	sets.weapons.Normal = {main="Kali",sub="Genmei Shield"}
+	sets.weapons.DD = {main="Izhiikoh",sub="Genmei Shield"}
 	-- Defense sets
 
 	sets.defense.PDT = {main="Terra's Staff", sub="Umbra Strap",ammo="Staunch Tathlum",
@@ -249,11 +250,11 @@ function init_gear_sets()
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
-	sets.engaged = {main="Aeneas",sub="Genbu's Shield",ammo="Ginsen",
+	sets.engaged = {main="Aeneas",sub="Genmei Shield",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Rajas Ring",ring2="Apate Ring",
 		back="Bleating Mantle",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
-	sets.engaged.Acc = {main="Aeneas",sub="Genbu's Shield",ammo="Ginsen",
+	sets.engaged.Acc = {main="Aeneas",sub="Genmei Shield",ammo="Ginsen",
 		head="Aya. Zucchetto +1",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
 		body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
 		back="Letalis Mantle",waist="Olseni Belt",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
