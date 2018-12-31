@@ -1,8 +1,8 @@
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
-    state.OffenseMode:options('Normal','Acc','FullAcc','Fodder')
+    state.OffenseMode:options('Normal','Acc') --,'FullAcc','Fodder'
     state.HybridMode:options('Pet','DT','Normal')
-    state.WeaponskillMode:options('Match','Normal','Acc','FullAcc','Fodder')
+    state.WeaponskillMode:options('Match','Normal','Acc') --,'FullAcc','Fodder'
     state.PhysicalDefenseMode:options('PDT')
 	state.IdleMode:options('Normal','PDT','Refresh')
 	state.Weapons:options('None','Godhands','PetWeapons')
@@ -86,7 +86,7 @@ function init_gear_sets()
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
         head="Lilitu Headpiece",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
-        body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
+        body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Gelatinous Ring +1",ring2="Valseur's Ring",
         back="Moonlight Cape",waist="Chaac Belt",legs="Hiza. Hizayoroi +2",feet=gear.herculean_waltz_feet}
         
     sets.precast.Waltz['Healing Waltz'] = {}
@@ -212,18 +212,18 @@ function init_gear_sets()
 
     sets.idle = {
         head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Hiza. Haramaki +2",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Hiza. Haramaki +2",hands=gear.herculean_dt_hands,ring1="Gelatinous Ring +1",ring2="Warden's Ring",
         back="Moonlight Cape",waist="Fucho-no-Obi",legs=gear.herculean_dt_legs,feet="Hippo. Socks +1"}
 		
 	sets.idle.Refresh = {
         head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Vrikodara Jupon",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Vrikodara Jupon",hands=gear.herculean_refresh_hands,ring1="Gelatinous Ring +1",ring2="Warden's Ring",
         back="Moonlight Cape",waist="Fucho-no-Obi",legs="Orvail Pants +1",feet=gear.herculean_refresh_feet}
 		
     -- Set for idle while pet is out (eg: pet regen gear)
     sets.idle.Pet = {
         head="Rawhide Mask",neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
-        body="Taeon Tabard",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Taeon Tabard",hands=gear.herculean_dt_hands,ring1="Gelatinous Ring +1",ring2="Warden's Ring",
         back="Moonlight Cape",waist="Isa Belt",legs="Tali'ah Sera. +1",feet=gear.herculean_refresh_feet}
 
     -- Idle sets to wear while pet is engaged
@@ -245,17 +245,17 @@ function init_gear_sets()
 
     sets.defense.PDT = {
         head="Blistering Sallet",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
-        body="Vrikodara Jupon",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Vrikodara Jupon",hands=gear.herculean_dt_hands,ring1="Gelatinous Ring +1",ring2="Warden's Ring",
         back="Moonlight Cape",waist="Isa Belt",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
 
     sets.defense.MDT = {
         head="Blistering Sallet",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
-        body="Vrikodara Jupon",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Vrikodara Jupon",hands=gear.herculean_dt_hands,ring1="Gelatinous Ring +1",ring2="Warden's Ring",
         back="Moonlight Cape",waist="Isa Belt",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
 		
     sets.defense.MEVA = {
         head="Blistering Sallet",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
-        body="Vrikodara Jupon",hands=gear.herculean_dt_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Vrikodara Jupon",hands=gear.herculean_dt_hands,ring1="Gelatinous Ring +1",ring2="Warden's Ring",
         back="Moonlight Cape",waist="Isa Belt",legs=gear.herculean_dt_legs,feet=gear.herculean_dt_feet}
 
     sets.Kiting = {feet="Hermes' Sandals"}
@@ -301,20 +301,20 @@ function init_gear_sets()
         body=gear.herculean_wsd_body,hands="Ryuo Tekko",ring1="Niqmaddu Ring",ring2="Regal Ring",
         back="Visucius's Mantle",waist="Grunfeld Rope",legs="Hiza. Hizayoroi +2",feet=gear.herculean_ta_feet}
     sets.engaged.Pet = {
-        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-        body="Taeon Tabard",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
+        head="Tali'ah Turban +1",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
+        body="Tali'ah Manteel +1",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
         back="Visucius's Mantle",waist="Hurch'lan Sash",legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
     sets.engaged.Acc.Pet = {
-        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-        body="Taeon Tabard",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
+        head="Tali'ah Turban +1",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
+        body="Tali'ah Manteel +1",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
         back="Visucius's Mantle",waist="Hurch'lan Sash",legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
     sets.engaged.FullAcc.Pet = {
-        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-        body="Taeon Tabard",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
+        head="Tali'ah Turban +1",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
+        body="Tali'ah Manteel +1",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
         back="Visucius's Mantle",waist="Hurch'lan Sash",legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
     sets.engaged.Fodder.Pet = {
-        head="Tali'ah Turban +1",neck="Empath Necklace",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
-        body="Taeon Tabard",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
+        head="Tali'ah Turban +1",neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Domesticator's Earring",
+        body="Tali'ah Manteel +1",hands="Tali'ah Gages +1",ring1="Thurandaut Ring",ring2="Overbearing Ring",
         back="Visucius's Mantle",waist="Hurch'lan Sash",legs="Tali'ah Sera. +1",feet="Tali'ah Crackows +1"}
 		
 	-- Weapons sets
