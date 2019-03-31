@@ -53,6 +53,34 @@ state.CancelStoneskin = M(true, 'Cancel Stone Skin') --Set this to false if you 
 	~ = Shift Key
 	# = Apps Key
 ]]
+--Ring Commands
+send_command('alias warp input //gs disable ring1; input /equip ring1 "Warp Ring"; wait 10; input /item "Warp Ring" <me>; wait 2; input //gs enable ring1')
+
+send_command('alias twind input /targetnpc; input //tradenpc 96 "Wind Crystal" ')
+send_command('alias tearth input /targetnpc; input //tradenpc 96 "Earth Crystal" ')
+send_command('alias twater input /targetnpc; input //tradenpc 96 "Water Crystal" ')
+
+--Money Making
+send_command('alias acher input //powder acheron')
+send_command('alias sellacher input //sellnpc Acheron Shield')
+
+--Warps
+--Bastok
+send_command('alias bm03 input //hp warp Bastok Markets 3')
+send_command('alias bm04 input //hp warp Bastok Markets 4')
+
+--San d'Oria
+send_command('alias ss01 input //hp warp Southern san d\'Oria 1')
+send_command('alias ns01 input //hp warp Northern san d\'Oria 1')
+
+send_command('alias mh01 input //hp warp Mhaura 1')
+
+send_command('alias cb01 input //hp warp Ceizak Battlegrounds 1')
+send_command('alias wa01 input //hp warp Western Adoulin 1')
+
+--Ambuscade Warp change monthly
+send_command('alias ak01 input //hp warp Den of Rancor 1')
+
 
 send_command('bind !@^f7 gs c toggle AutoWSMode') --Turns auto-ws mode on and off.
 send_command('bind !^f7 gs c toggle AutoFoodMode') --Turns auto-ws mode on and off.

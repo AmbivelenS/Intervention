@@ -73,7 +73,7 @@ function init_gear_sets()
 	sets.precast.Waltz['Healing Waltz'] = {}
 
 	sets.precast.Step = {ammo="Falcon Eye",
-					head="Adhemar Bonnet",neck="Combatant's Torque",ear1="Regal Earring",ear2="Telos Earring",
+					head="Adhemar Bonnet +1",neck="Combatant's Torque",ear1="Regal Earring",ear2="Telos Earring",
 					body="Assim. Jubbah +2",hands="Aya. Manopolas +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 					back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
@@ -97,12 +97,12 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Ginsen",
-				  head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-                  body="Ayanmo Corazza +2",hands="Jhakri Cuffs +2",ring1="Rajas Ring",ring2="Apate Ring",
+				  head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
+                  body="Adhemar Jacket +1",hands="Jhakri Cuffs +2",ring1="Rajas Ring",ring2="Apate Ring",
 				  back=gear.da_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs, feet=gear.herculean_ta_feet}
 
 	sets.precast.WS.SomeAcc = {ammo="Ginsen",
-				  head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
+				  head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
                   body="Ayanmo Corazza +2",hands="Jhakri Cuffs +2",ring1="Rajas Ring",ring2="Apate Ring",
 				  back=gear.da_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs, feet=gear.herculean_ta_feet}
 
@@ -122,7 +122,7 @@ function init_gear_sets()
 			      back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
 	sets.precast.WS.Fodder = {ammo="Ginsen",
-				  head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
+				  head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
                   body="Ayanmo Corazza +2",hands="Jhakri Cuffs +2",ring1="Rajas Ring",ring2="Apate Ring",
 				  back=gear.da_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs, feet=gear.herculean_ta_feet}
 
@@ -141,28 +141,28 @@ function init_gear_sets()
 	sets.precast.WS['Realmrazer'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Realmrazer'].Fodder = set_combine(sets.precast.WS['Realmrazer'], {})
 
-	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {ammo="Falcon Eye",head="Adhemar Bonnet",ear1="Moonshade Earring",body="Abnoba Kaftan",hands="Adhemar Wrist. +1", ring2="Begrudging Ring",back=gear.crit_jse_back,feet="Thereoid Greaves"})
+	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {ammo="Falcon Eye",head="Adhemar Bonnet +1",ear1="Moonshade Earring",body="Abnoba Kaftan",hands="Adhemar Wrist. +1", ring2="Begrudging Ring",back=gear.da_jse_back,feet="Thereoid Greaves"})
 	sets.precast.WS['Chant du Cygne'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ammo="Falcon Eye",ear1="Moonshade Earring",ear2="Cessance Earring",body="Abnoba Kaftan",hands="Adhemar Wrist. +1", ring2="Begrudging Ring",back=gear.crit_jse_back})
 	sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {ear2="Moonshade Earring",ring2="Begrudging Ring",body="Sayadio's Kaftan",back=gear.crit_jse_back,legs="Carmine Cuisses +1"})
 	sets.precast.WS['Chant du Cygne'].HighAcc = set_combine(sets.precast.WS.HighAcc, {body="Sayadio's Kaftan",back=gear.crit_jse_back})
 	sets.precast.WS['Chant du Cygne'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Chant du Cygne'].Fodder = set_combine(sets.precast.WS['Chant du Cygne'], {})
 
-	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {head="Adhemar Bonnet",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Rufescent Ring",back=gear.wsd_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
+	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {head="Adhemar Bonnet +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Rufescent Ring",back=gear.wsd_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Savage Blade'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Carmine Mask +1",ear1="Moonshade Earring",ear2="Ishvara Earring",body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Rufescent Ring",back=gear.wsd_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ear2="Moonshade Earring",hands="Jhakri Cuffs +2",back=gear.wsd_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Savage Blade'].HighAcc = set_combine(sets.precast.WS.HighAcc, {ear2="Moonshade Earring",hands="Jhakri Cuffs +2",ring1="Rufescent Ring",ring2="Ilabrat Ring",back=gear.wsd_jse_back,waist="Windbuffet Belt +1",feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Savage Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Savage Blade'].Fodder = set_combine(sets.precast.WS['Savage Blade'], {})
 
-	sets.precast.WS['Vorpal Blade'] = set_combine(sets.precast.WS, {head="Adhemar Bonnet",ear1="Cessance Earring", ear2="Brutal Earring",ring2="Begrudging Ring",back=gear.crit_jse_back,feet="Thereoid Greaves"})
-	sets.precast.WS['Vorpal Blade'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Adhemar Bonnet",ring2="Begrudging Ring",back=gear.crit_jse_back})
+	sets.precast.WS['Vorpal Blade'] = set_combine(sets.precast.WS, {head="Adhemar Bonnet +1",ear1="Cessance Earring", ear2="Brutal Earring",ring2="Begrudging Ring",back=gear.crit_jse_back,feet="Thereoid Greaves"})
+	sets.precast.WS['Vorpal Blade'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {head="Adhemar Bonnet +1",ring2="Begrudging Ring",back=gear.crit_jse_back})
 	sets.precast.WS['Vorpal Blade'].Acc = set_combine(sets.precast.WS.Acc, {back=gear.crit_jse_back})
 	sets.precast.WS['Vorpal Blade'].HighAcc = set_combine(sets.precast.WS.HighAcc, {})
 	sets.precast.WS['Vorpal Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Vorpal Blade'].Fodder = set_combine(sets.precast.WS['Vorpal Blade'], {})
 
-	sets.precast.WS['Expiacion'] = set_combine(sets.precast.WS, {head="Adhemar Bonnet",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Rufescent Ring",back=gear.wsd_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
+	sets.precast.WS['Expiacion'] = set_combine(sets.precast.WS, {head="Adhemar Bonnet +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Rufescent Ring",back=gear.wsd_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Expiacion'].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {ear1="Moonshade Earring",ear2="Ishvara Earring",body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Rufescent Ring",back=gear.wsd_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Expiacion'].Acc = set_combine(sets.precast.WS.Acc, {ear2="Moonshade Earring",body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",back=gear.wsd_jse_back,legs="Carmine Cuisses +1",feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Expiacion'].HighAcc = set_combine(sets.precast.WS.HighAcc, {ear2="Moonshade Earring",body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",back=gear.wsd_jse_back,legs="Carmine Cuisses +1",feet=gear.herculean_wsd_feet})
@@ -194,7 +194,7 @@ function init_gear_sets()
 	-- Physical Spells --
 
 	sets.midcast['Blue Magic'].Physical = {main="Vampirism",sub="Vampirism",ammo="Mavi Tathlum",
-		head="Adhemar Bonnet",neck="Caro Necklace",ear1="Cessance Earring",ear2="Telos Earring",
+		head="Adhemar Bonnet +1",neck="Caro Necklace",ear1="Cessance Earring",ear2="Telos Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Ilabrat Ring",
 		back=gear.wsd_jse_back,waist="Windbuffet Belt +1",legs="Jhakri Slops +1",feet=gear.herculean_acc_feet}
 
@@ -447,8 +447,8 @@ function init_gear_sets()
 	sets.Assault = {ring1="Balrahn's Ring"}
 	
 	-- Weapons sets
-	sets.weapons.Main = {main="Claidheamh Soluis",sub="Xiutleato"}
-	sets.weapons.MainAcc = {main="Claidheamh Soluis", sub="Usonmunku"}
+	sets.weapons.Main = {main="Tanmogayi +1",sub="Xiutleato"}
+	sets.weapons.MainAcc = {main="Tanmogayi +1", sub="Usonmunku"}
 	sets.weapons.MAB = {main="Vampirism", sub="Nibiru Cudgel"}
 	sets.weapons.MeleeClubs = {main="Nehushtan",sub="Nehushtan"}
 	-- sets.weapons.Almace = {main="Almace",sub="Sequence"}
@@ -460,42 +460,42 @@ function init_gear_sets()
 	-- Engaged sets
 
 	sets.engaged = {main="Tizona",sub="Almace",ammo="Ginsen",
-			    head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-			    body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
+			    head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
+			    body="Adhemar Jacket +1",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
 			    back=gear.da_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs, feet=gear.herculean_ta_feet}
 
 	sets.engaged.AM = {main="Tizona",sub="Almace",ammo="Ginsen",
-			    head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Telos Earring",
+			    head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Telos Earring",
 			    body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
 			    back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs, feet="Carmine Greaves +1"}
 
 	sets.engaged.MinAcc = {main="Tizona",sub="Almace",ammo="Ginsen",
-				head="Adhemar Bonnet",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Brutal Earring",
-				body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
+				head="Adhemar Bonnet +1",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Brutal Earring",
+				body="Adhemar Jacket +1",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
 				back=gear.da_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs, feet=gear.herculean_ta_feet}
 
 	sets.engaged.MinAcc.AM = {main="Tizona",sub="Almace",ammo="Ginsen",
-			    head="Adhemar Bonnet",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
+			    head="Adhemar Bonnet +1",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
 			    body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
 			    back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs, feet="Carmine Greaves +1"}
 
 	sets.engaged.SomeAcc = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-				head="Adhemar Bonnet",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
+				head="Adhemar Bonnet +1",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
 				body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
 				back=gear.da_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs, feet=gear.herculean_acc_feet}
 
 	sets.engaged.SomeAcc.AM = {main="Tizona",sub="Almace",ammo="Ginsen",
-			    head="Adhemar Bonnet",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
+			    head="Adhemar Bonnet +1",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
 			    body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Ilabrat Ring",
 			    back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs, feet="Carmine Greaves +1"}
 
 	sets.engaged.Acc = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-				head="Adhemar Bonnet",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
+				head="Adhemar Bonnet +1",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
 				body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
 				back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
 	sets.engaged.Acc.AM = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-			    head="Adhemar Bonnet",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
+			    head="Adhemar Bonnet +1",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
 			    body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Ilabrat Ring",
 			    back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
@@ -520,12 +520,12 @@ function init_gear_sets()
 			    back=gear.stp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
 	sets.engaged.Fodder = {main="Tizona",sub="Almace",ammo="Ginsen",
-			    head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Dedition Earring",ear2="Brutal Earring",
+			    head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Dedition Earring",ear2="Brutal Earring",
 			    body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
 			    back=gear.da_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs, feet=gear.herculean_ta_feet}
 
 	sets.engaged.Fodder.AM = {main="Tizona",sub="Almace",ammo="Ginsen",
-			    head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Dedition Earring",ear2="Telos Earring",
+			    head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Dedition Earring",ear2="Telos Earring",
 			    body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1", ring1="Rajas Ring",ring2="Apate Ring",
 			    back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs, feet="Carmine Greaves +1"}
 
@@ -595,52 +595,52 @@ function init_gear_sets()
 				back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
 	sets.engaged.Fodder.DTLite = {main="Tizona",sub="Almace",ammo="Ginsen",
-			    head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring",ear2="Brutal Earring",
+			    head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring",ear2="Brutal Earring",
 			    body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
 			    back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Ahosi Leggings"}
 
 	sets.engaged.Fodder.DTLite.AM = {main="Tizona",sub="Almace",ammo="Ginsen",
-			    head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring",ear2="Telos Earring",
+			    head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring",ear2="Telos Earring",
 			    body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
 			    back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Ahosi Leggings"}
 
 	sets.engaged.Fodder.PDT = {main="Tizona",sub="Almace",ammo="Staunch Tathlum",
-				head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring",ear2="Brutal Earring",
+				head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring",ear2="Brutal Earring",
 		        body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
 				back="Solemnity Cape",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Ahosi Leggings"}
 
 	sets.engaged.MDT = {main="Tizona",sub="Almace",ammo="Ginsen",
-				head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring",ear2="Telos Earring",
+				head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring",ear2="Telos Earring",
 		        body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 				back="Engulfer Cape +1",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Ahosi Leggings"}
 
 	sets.engaged.MinAcc.MDT = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-				head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring",ear2="Telos Earring",
+				head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring",ear2="Telos Earring",
 		        body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 				back="Engulfer Cape +1",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Ahosi Leggings"}
 
 	sets.engaged.SomeAcc.MDT = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-				head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
+				head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
 		        body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 				back="Engulfer Cape +1",waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs, feet="Ahosi Leggings"}
 
 	sets.engaged.Acc.MDT = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-				head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
+				head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
 		        body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 				back="Engulfer Cape +1",waist="Olseni Belt",legs=gear.herculean_ta_legs, feet="Ahosi Leggings"}
 
 	sets.engaged.HighAcc.MDT = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-				head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
+				head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
 		        body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 				back="Engulfer Cape +1",waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Ahosi Leggings"}
 
 	sets.engaged.FullAcc.MDT = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-				head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
+				head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
 		        body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 				back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet=gear.herculean_acc_feet}
 
 	sets.engaged.Fodder.MDT = {main="Tizona",sub="Almace",ammo="Ginsen",
-				head="Adhemar Bonnet",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
+				head="Adhemar Bonnet +1",neck="Twilight Torque",ear1="Cessance Earring", ear2="Telos Earring",
 		        body="Ayanmo Corazza +2",hands="Aya. Manopolas +1",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 				back="Engulfer Cape +1",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Ahosi Leggings"}
 

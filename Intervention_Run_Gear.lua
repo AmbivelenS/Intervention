@@ -20,7 +20,7 @@ function user_setup()
 	send_command('bind !` gs c SubJobEnmity')
 	send_command('bind @` gs c cycle RuneElement')
 	send_command('bind ^` gs c RuneElement')
-	send_command('bind @pause gs c toggle AutoRuneMode')
+	send_command('bind ^f8 gs c toggle AutoRuneMode')
 	send_command('bind ^delete input /ja "Provoke" <stnpc>')
 	send_command('bind !delete input /ma "Cure IV" <stal>')
 	send_command('bind @delete input /ma "Flash" <stnpc>')
@@ -42,18 +42,18 @@ end
 function init_gear_sets()
 
     sets.Enmity = {ammo="Staunch Tathlum",
-	     head="Fu. Bandeau +1",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Trux Earring",
+	     head="Rabid Visor",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Trux Earring",
 	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Petrov Ring",ring2="Vengeful Ring",
 		 back=gear.enmity_jse_back,waist="Goading Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 		 
     sets.Enmity.SIRD = {ammo="Staunch Tathlum",
 		head="Meghanada Visor +2",neck="Twilight torque",ear1="Genmei Earring",ear2="Trux Earring",
-		body="Emet Harness +1",hands="Aya. Manopolas +1", ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Emet Harness +1",hands="Aya. Manopolas +2", ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back=gear.enmity_jse_back,waist="Rumination Sash",legs="Carmine Cuisses +1",feet="Erilaz Greaves +1"}
 
     sets.Enmity.DT = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        body="Runeist's Coat",hands="Aya. Manopolas +1", ring1="Moonbeam Ringa",ring2="Defending Ring",
+        body="Runeist's Coat",hands="Aya. Manopolas +2", ring1="Moonbeam Ringa",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
 	--------------------------------------
@@ -143,7 +143,7 @@ function init_gear_sets()
 			
 	sets.precast.FC.DT = {ammo="Staunch Tathlum",
         head="Rune. Bandeau +3",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        body="Runeist's Coat",hands="Aya. Manopolas +1", ring1="Gelatinous ring +1",ring2="Defending Ring",
+        body="Runeist's Coat",hands="Aya. Manopolas +2", ring1="Gelatinous ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 			
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", legs="Futhark Trousers +1"})
@@ -153,22 +153,22 @@ function init_gear_sets()
 	-- Weaponskill sets
 	sets.precast.WS = {ammo="Amar Cluster",
             head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-            body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
-            back=gear.da_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
+            body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Apate Ring",
+            back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
 	sets.precast.WS.SomeAcc = {ammo="Seeth. Bomblet +1",
             head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-            body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
-            back=gear.da_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
+            body="Ayanmo Corazza +2",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Apate Ring",
+            back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
 	sets.precast.WS.Acc = {ammo="Honed Tathlum",
-            head="Aya. Zucchetto +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-            body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
-            back=gear.da_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
+            head="Aya. Zucchetto +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
+            body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Apate Ring",
+            back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
 	sets.precast.WS.HighAcc = {ammo="Seeth. Bomblet +1",
             head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Telos Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
-            back=gear.da_jse_back,waist="Fotia Belt",legs=gear.herculean_ta_legs,feet=gear.herculean_acc_feet}
+            back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_acc_feet}
 	sets.precast.WS.FullAcc = {ammo="Honed Tathlum",
-            head="Aya. Zucchetto +1",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Sherida Earring",
+            head="Aya. Zucchetto +2",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
             back=gear.stp_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
@@ -201,7 +201,7 @@ function init_gear_sets()
 			
 	sets.midcast.FastRecast.DT = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        body="Runeist's Coat",hands="Aya. Manopolas +1", ring1="Gelatinous ring +1",ring2="Defending Ring",
+        body="Runeist's Coat",hands="Aya. Manopolas +2", ring1="Gelatinous ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 
     sets.midcast['Enhancing Magic'] = set_combine(sets.midcast.FastRecast,{head="Erilaz Galea +1",neck="Incanter's Torque",ear1="Andoaa Earring",hands="Runeist's Mitons +3",back="Merciful Cape",waist="Olympus Sash",legs="Futhark Trousers +1"})
@@ -238,19 +238,19 @@ function init_gear_sets()
 
     sets.idle = {ammo='Homiliary',
 		head="Rawhide Mask",neck="Twilight torque",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Futhark Coat +1",hands=gear.herculean_refresh_hands,ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Futhark Coat +1",hands="Aya. Manopolas +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back="Solemnity Cape",waist="Flume Belt",legs="Aya. Cosciales +1",feet=gear.herculean_refresh_feet}
 		
     sets.idle.Sphere = set_combine(sets.idle,{body="Mekosu. Harness"})
 			
 	sets.idle.Tank = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Twilight torque",ear1="Genmei Earring",ear2="Ethereal Earring",
-        body="Erilaz Surcoat +1",hands="Aya. Manopolas +1", ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Erilaz Surcoat +1",hands="Aya. Manopolas +2", ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 		
 	sets.idle.KiteTank = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Vim Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-        body="Futhark Coat +1",hands="Aya. Manopolas +1", ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Futhark Coat +1",hands="Aya. Manopolas +2", ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"}
 
 	sets.idle.Weak = {ammo='Homiliary',
@@ -278,29 +278,29 @@ function init_gear_sets()
 	
 	sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Twilight torque",ear1="Genmei Earring",ear2="Ethereal Earring",
-        body="Futhark Coat +1",hands="Aya. Manopolas +1", ring1="Gelatinous ring +1",ring2="Defending Ring",
+        body="Futhark Coat +1",hands="Aya. Manopolas +2", ring1="Gelatinous ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 	sets.defense.PDT_HP = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        body="Runeist's Coat",hands="Aya. Manopolas +1", ring1="Gelatinous ring +1",ring2="Defending Ring",
+        body="Runeist's Coat",hands="Aya. Manopolas +2", ring1="Gelatinous ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 		
 	sets.defense.MDT = {ammo="Yamarang",
         head="Erilaz Galea +1",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Sanare Earring",
-        body="Runeist's Coat",hands="Aya. Manopolas +1", ring1="Gelatinous Ring +1",ring2="Shadow Ring",
+        body="Runeist's Coat",hands="Aya. Manopolas +2", ring1="Gelatinous Ring +1",ring2="Shadow Ring",
         back="Solemnity Cape",waist="Engraved Belt",legs=gear.herculean_dt_legs,feet="Erilaz Greaves +1"}
 	sets.defense.MDT_HP = {ammo="Staunch Tathlum",
         head="Erilaz Galea +1",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        body="Runeist's Coat",hands="Aya. Manopolas +1", ring1="Gelatinous ring +1",ring2="Defending Ring",
+        body="Runeist's Coat",hands="Aya. Manopolas +2", ring1="Gelatinous ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Engraved Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 	
 	sets.defense.BDT = {ammo="Staunch Tathlum",
         head="Erilaz Galea +1",neck="Warder's Charm +1",ear1="Odnowa Earring +1",ear2="Sanare Earring",
-        body="Runeist's Coat",hands="Aya. Manopolas +1", ring1="Gelatinous Ring +1",ring2="Shadow Ring",
+        body="Runeist's Coat",hands="Aya. Manopolas +2", ring1="Gelatinous Ring +1",ring2="Shadow Ring",
         back="Solemnity Cape",waist="Engraved Belt",legs=gear.herculean_dt_legs,feet="Erilaz Greaves +1"}
 	sets.defense.BDT_HP = {ammo="Staunch Tathlum",
         head="Erilaz Galea +1",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
-        body="Runeist's Coat",hands="Aya. Manopolas +1", ring1="Gelatinous ring +1",ring2="Defending Ring",
+        body="Runeist's Coat",hands="Aya. Manopolas +2", ring1="Gelatinous ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Engraved Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 	
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
@@ -336,49 +336,49 @@ function init_gear_sets()
 	--------------------------------------
 
     sets.engaged = {ammo="Ginsen",
-            head="Adhemar Bonnet",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
-            body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
+            head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
+            body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
     sets.engaged.SomeAcc = {ammo="Ginsen",
             head="Adhemar Bonnet",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
 	sets.engaged.Acc = {ammo="Falcon Eye",
-            head="Aya. Zucchetto +1",neck="Sanctity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
+            head="Aya. Zucchetto +2",neck="Sanctity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
 	sets.engaged.HighAcc = {ammo="Falcon Eye",
-            head="Aya. Zucchetto +1",neck="Combatant's Torque",ear1="Telos Earring",ear2="Sherida Earring",
+            head="Aya. Zucchetto +2",neck="Combatant's Torque",ear1="Telos Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Ilabrat Ring",
             back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_acc_feet}
 	sets.engaged.FullAcc = {ammo="Honed Tathlum",
-            head="Aya. Zucchetto +1",neck="Subtlety Spec.",ear1="Cessance Earring",ear2="Sherida Earring",
+            head="Aya. Zucchetto +2",neck="Subtlety Spec.",ear1="Cessance Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.stp_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
     sets.engaged.DTLite = {ammo="Ginsen",
-            head="Aya. Zucchetto +1",neck="Twilight torque",ear1="Brutal Earring",ear2="Sherida Earring",
-            body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
-            back="Atheling Mantle",waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
+            head="Aya. Zucchetto +2",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Sherida Earring",
+            body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+            back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Erilaz Greaves +1"}
     sets.engaged.SomeAcc.DTLite = {ammo="Falcon Eye",
-            head="Aya. Zucchetto +1",neck="Twilight torque",ear1="Sherida Earring",ear2="Sherida Earring",
+            head="Aya. Zucchetto +2",neck="Twilight torque",ear1="Sherida Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
             back="Atheling Mantle",waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
 	sets.engaged.Acc.DTLite = {ammo="Falcon Eye",
-            head="Aya. Zucchetto +1",neck="Twilight torque",ear1="Telos Earring",ear2="Sherida Earring",
-            body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
-            back="Atheling Mantle",waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
+            head="Aya. Zucchetto +2",neck="Twilight torque",ear1="Telos Earring",ear2="Sherida Earring",
+            body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
+            back="Atheling Mantle",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Erilaz Greaves +1"}
 	sets.engaged.HighAcc.DTLite = {ammo="Falcon Eye",
-            head="Aya. Zucchetto +1",neck="Twilight torque",ear1="Telos Earring",ear2="Sherida Earring",
+            head="Aya. Zucchetto +2",neck="Twilight torque",ear1="Telos Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
             back="Atheling Mantle",waist="Olseni Belt",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
 	sets.engaged.FullAcc.DTLite = {ammo="Falcon Eye",
-            head="Aya. Zucchetto +1",neck="Twilight torque",ear1="Telos Earring",ear2="Zennaroi Earring",
+            head="Aya. Zucchetto +2",neck="Twilight torque",ear1="Telos Earring",ear2="Zennaroi Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
             back="Atheling Mantle",waist="Olseni Belt",legs=gear.herculean_ta_legs,feet="Erilaz Greaves +1"}
 	
     sets.engaged.Tank = {ammo="Staunch Tathlum",
-        head="Fu. Bandeau +1",neck="Twilight torque",ear1="Genmei Earring",ear2="Ethereal Earring",
-        body="Erilaz Surcoat +1",hands="Aya. Manopolas +1", ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        head="Fu. Bandeau +1",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Ethereal Earring",
+        body="Erilaz Surcoat +1",hands="Aya. Manopolas +2", ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
     sets.engaged.SomeAcc.Tank = sets.engaged.Tank
 	sets.engaged.Acc.Tank = sets.engaged.Tank

@@ -38,7 +38,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Plunderer's Armlets +1",feet="Skulk. Poulaines +1"})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {hands="Plunderer's Armlets",feet="Skulk. Poulaines +1"})
     sets.ExtraRegen = {}
     sets.Kiting = {feet="Skadi's Jambeaux +1"}
 
@@ -95,7 +95,7 @@ function init_gear_sets()
     sets.precast.JA['Trick Attack'] = sets.buff['Trick Attack']
 
     -- Waltz set (chr and vit)
-    sets.precast.Waltz = {ammo="Yamarang",
+    sets.precast.Waltz = {ammo="Ginsen",
         head="Mummu Bonnet +2",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
         body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
         back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
@@ -169,7 +169,7 @@ function init_gear_sets()
 
     sets.precast.WS['Last Stand'] = {
         head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Clearview Earring",ear2="Neritic Earring",
-        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Apate Ring",ring2="Regal Ring",
+        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Adhemar Bonnet +1 Ring",ring2="Regal Ring",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
@@ -205,12 +205,12 @@ function init_gear_sets()
 
     sets.midcast.RA = {
         head="Mummu Bonnet +2",neck="Combatant's Torque",ear1="Clearview Earring",ear2="Neritic Earring",
-        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Apate Ring",ring2="Regal Ring",
+        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Adhemar Bonnet +1 Ring",ring2="Regal Ring",
         back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     sets.midcast.RA.Acc = {
         head="Mummu Bonnet +2",neck="Combatant's Torque",ear1="Clearview Earring",ear2="Neritic Earring",
-        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Apate Ring",ring2="Regal Ring",
+        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Adhemar Bonnet +1 Ring",ring2="Regal Ring",
         back=gear.da_jse_back,waist="Chaac Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 
     --------------------------------------
@@ -257,17 +257,17 @@ function init_gear_sets()
     --------------------------------------
 
     -- Normal melee group
-    sets.engaged = {ammo="Yamarang",
+    sets.engaged = {ammo="Ginsen",
         head="Dampening Tam",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",
-        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Apate Ring",
         back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 		
-    sets.engaged.SomeAcc = {ammo="Yamarang",
+    sets.engaged.SomeAcc = {ammo="Ginsen",
         head="Dampening Tam",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Apate Ring",
         back=gear.da_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
-	sets.engaged.Acc = {ammo="Yamarang",
+	sets.engaged.Acc = {ammo="Ginsen",
         head="Dampening Tam",neck="Combatant's Torque",ear1="Telos Earring",ear2="Suppanomimi",
         body="Mummu Jacket +2",hands="Floral Gauntlets",ring1="Ilabrat Ring",ring2="Regal Ring",
         back=gear.da_jse_back,waist="Olseni Belt",legs="Meg. Chausses +2",feet=gear.herculean_acc_feet}
@@ -277,9 +277,9 @@ function init_gear_sets()
         body="Mummu Jacket +2",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.da_jse_back,waist="Olseni Belt",legs="Mummu Kecks +2",feet=gear.herculean_acc_feet}
 
-    sets.engaged.Fodder = {ammo="Yamarang",
+    sets.engaged.Fodder = {ammo="Ginsen",
         head="Dampening Tam",neck="Ainia Collar",ear1="Brutal Earring",ear2="Sherida Earring",
-        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Petrov Ring",ring2="Apate Ring",
         back=gear.da_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
     sets.engaged.PDT = {ammo="Staunch Tathlum",
@@ -313,12 +313,13 @@ end
 function select_default_macro_book()
     -- Default macro set/book
     if player.sub_job == 'DNC' then
-        set_macro_page(8, 5)
+        set_macro_page(1, 6)
     elseif player.sub_job == 'WAR' then
-        set_macro_page(7, 5)
+        set_macro_page(1, 6)
     elseif player.sub_job == 'NIN' then
-        set_macro_page(10, 5)
+        set_macro_page(1, 6)
     else
-        set_macro_page(6, 5)
+        set_macro_page(1, 6)
+        set_macro_page(1, 6)
     end
 end

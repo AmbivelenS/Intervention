@@ -51,9 +51,9 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
 
-    sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
+    sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap",ammo="Impatiens",
         head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
-        body="Shango Robe",hands="Gende. Gages +1",ring1="Jhakri Ring",ring2="Prolix Ring",
+        body="Shango Robe",hands="Acad. Bracers +2",ring1="Jhakri Ring",ring2="Prolix Ring",
         back="Swith Cape",waist="Witful Belt",legs="Orvail Pants +1",feet="Acad. Loafers +2"} --"Psycloth Lappas"
 		
 	sets.precast.FC.Arts = {}
@@ -183,12 +183,12 @@ function init_gear_sets()
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Jhakri Slops +1",feet=gear.merlinic_aspir_feet}
 
     sets.midcast.Kaustra = {main="Akademos",sub="Niobid Strap",ammo="Pemphredo Tathlum",
-        head="Pixie Hairpin +1",neck="Sanctity necklace",ear1="Hecate's Earring",ear2="Barkaro. Earring",
+        head="Pixie Hairpin +1",neck="Sanctity necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Jhakri Robe +2", hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Archon Ring",
         back=gear.nuke_jse_back,waist="Refoccilation Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
 		
     sets.midcast.Kaustra.Resistant = {main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
-        head="Jhakri Coronal +1", neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Barkaro. Earring",
+        head="Jhakri Coronal +1", neck="Sanctity Necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Jhakri Robe +2", hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
 
@@ -217,17 +217,17 @@ function init_gear_sets()
 
     -- Elemental Magic sets are default for handling low-tier nukes.
     sets.midcast['Elemental Magic'] = {main="Akademos",sub="Niobid Strap",ammo="Dosis Tathlum",
-        head="Jhakri Coronal +1", neck="Sanctity necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
+        head="Jhakri Coronal +1", neck="Sanctity necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Jhakri Robe +2", hands="Jhakri Cuffs +2",ring1="Acumen Ring",ring2="Jhakri Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
 
     sets.midcast['Elemental Magic'].Resistant = {main="Akademos",sub="Niobid Strap",ammo="Pemphredo Tathlum",
-        head="Jhakri Coronal +1", neck="Sanctity Necklace",ear1="Hecate's Earring",ear2="Barkaro. Earring",
+        head="Jhakri Coronal +1", neck="Sanctity Necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Acad. Gown +2", hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Acad. Pants +2",feet="Acad. Loafers +2"}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Akademos",sub="Niobid Strap",ammo="Dosis Tathlum",
-        head="Jhakri Coronal +1", neck="Sanctity necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
+        head="Jhakri Coronal +1", neck="Sanctity necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Jhakri Robe +2", hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
 		
@@ -247,12 +247,12 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {sub="Alber Strap",ammo="Pemphredo Tathlum",ear1="Regal Earring",ear2="Barkaro. Earring",hands="Jhakri Cuffs +2"})
 
 	sets.midcast.Helix = {main="Akademos",sub="Niobid Strap",ammo="Dosis Tathlum",
-        head="Jhakri Coronal +1", neck="Sanctity necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
+        head="Jhakri Coronal +1", neck="Sanctity necklace",ear1="Regal Earring",ear2="Barkaro. Earring",
         body="Jhakri Robe +2", hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist="Refoccilation Stone",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
 	
 	sets.midcast.Helix.Resistant = {main=gear.grioavolr_nuke_staff,sub="Niobid Strap",ammo="Pemphredo Tathlum",
-        head="Jhakri Coronal +1", neck="Sanctity Necklace",ear1="Barkaro. Earring",ear2="Friomisi Earring",
+        head="Jhakri Coronal +1", neck="Sanctity Necklace",ear1="Barkaro. Earring",ear2="Barkaro. Earring",
         body="Jhakri Robe +2", hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
 		
