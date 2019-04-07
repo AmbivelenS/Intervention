@@ -125,7 +125,7 @@ function init_gear_sets()
 
 	-- For song buffs (duration and AF3 set bonus)
 	sets.midcast.SongEffect = {main="Kali",sub="Genmei Shield",range="Gjallarhorn",ammo=empty,
-		head="Fili Calot",neck="Moonbow Whistle",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
+		head="Fili Calot",neck="Mnbw. Whistle +1",ear1="Enchntr. Earring +1",ear2="Loquacious Earring",
 		body="Fili Hongreline +1",hands="Inyan. Dastanas +2",ring1="Stikini Ring",ring2="Stikini Ring",
 		back="Intarabus's Cape",waist="Kobo Obi",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 
@@ -136,7 +136,7 @@ function init_gear_sets()
 		hands="Brioso Cuffs +2",
 		legs="Brioso Cannions +2",
 		feet="Brioso Slippers +2",
-		neck="Moonbow Whistle",
+		neck="Mnbw. Whistle +1",
 		ring1="Stikini Ring",
 		ring2="Perception Ring",
 		left_ear="Lifestorm Earring",
@@ -151,7 +151,7 @@ function init_gear_sets()
 		hands="Brioso Cuffs +2",
 		legs="Brioso Cannions +2",
 		feet="Brioso Slippers +2",
-		neck="Moonbow Whistle",
+		neck="Mnbw. Whistle +1",
 		ring1="Stikini Ring",
 		ring2="Perception Ring",
 		left_ear="Lifestorm Earring",
@@ -166,7 +166,7 @@ function init_gear_sets()
 		hands="Brioso Cuffs +2",
 		legs="Inyanga Shalwar +2",
 		feet="Brioso Slippers +2",
-		neck="Moonbow Whistle",
+		neck="Mnbw. Whistle +1",
 		left_ear="Lifestorm Earring",
 		right_ear="Psystorm Earring",}
 	-- Cast spell with normal gear, except using Daurdabla instead

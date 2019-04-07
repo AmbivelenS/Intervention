@@ -13,7 +13,7 @@ function user_setup()
 	state.ExtraDefenseMode = M{['description']='Extra Defense Mode','None','MP'}
 
 	gear.enmity_jse_back = {name="Ogma's cape",augments={'INT+20','Eva.+20 /Mag. Eva.+20','Enmity+10',}}
-	gear.stp_jse_back = {name="Ogma's cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
+	gear.stp_jse_back = {name="Ogma's cape",augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Phys. dmg. taken-10%',}}
 	gear.da_jse_back = {name="Ogma's cape",augments={'STR+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 
 	-- Additional local binds
@@ -35,6 +35,7 @@ function user_setup()
 	send_command('bind @f10 gs c toggle TankAutoDefense')
 	send_command('bind ^@!` gs c cycle SkillchainMode')
 	send_command('bind !r gs c weapons Lionheart;gs c update')
+	send_command('bind !@^` gs c cycle Stance')
 	
 	select_default_macro_book()
 end
@@ -43,8 +44,8 @@ function init_gear_sets()
 
     sets.Enmity = {ammo="Staunch Tathlum",
 	     head="Rabid Visor",neck="Unmoving Collar +1",ear1="Friomisi Earring",ear2="Trux Earring",
-	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Petrov Ring",ring2="Vengeful Ring",
-		 back=gear.enmity_jse_back,waist="Goading Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
+	     body="Emet Harness +1",hands="Kurys Gloves",ring1="Petrov Ring",ring2="Provocare Ring",
+		 back=gear.enmity_jse_back,waist="Sinew Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 		 
     sets.Enmity.SIRD = {ammo="Staunch Tathlum",
 		head="Meghanada Visor +2",neck="Twilight torque",ear1="Genmei Earring",ear2="Trux Earring",
@@ -152,7 +153,7 @@ function init_gear_sets()
 
 	-- Weaponskill sets
 	sets.precast.WS = {ammo="Amar Cluster",
-            head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
+            head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
             body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
 	sets.precast.WS.SomeAcc = {ammo="Seeth. Bomblet +1",
@@ -356,9 +357,9 @@ function init_gear_sets()
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.stp_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
     sets.engaged.DTLite = {ammo="Ginsen",
-            head="Aya. Zucchetto +2",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Sherida Earring",
-            body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
-            back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Erilaz Greaves +1"}
+            head="Aya. Zucchetto +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
+            body="Ayanmo Corazza +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
+            back=gear.stp_jse_back,waist="Grunfeld Rope",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
     sets.engaged.SomeAcc.DTLite = {ammo="Falcon Eye",
             head="Aya. Zucchetto +2",neck="Twilight torque",ear1="Sherida Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",
