@@ -68,10 +68,10 @@ function init_gear_sets()
     sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
     sets.precast.JA['Pflug'] = set_combine(sets.Enmity,{feet="Runeist's Boots +3"})
     sets.precast.JA['Battuta'] = set_combine(sets.Enmity,{head="Futhark Bandeau +1"})
-    sets.precast.JA['Liement'] = set_combine(sets.Enmity,{body="Futhark Coat +1"})
+    sets.precast.JA['Liement'] = set_combine(sets.Enmity,{body="Futhark Coat +2"})
     sets.precast.JA['Gambit'] = set_combine(sets.Enmity,{hands="Runeist's Mitons +3"})
     sets.precast.JA['Rayke'] = set_combine(sets.Enmity,{feet="Futhark Boots +1"})
-    sets.precast.JA['Elemental Sforzo'] = set_combine(sets.Enmity,{body="Futhark Coat +1"})
+    sets.precast.JA['Elemental Sforzo'] = set_combine(sets.Enmity,{body="Futhark Coat +2"})
     sets.precast.JA['Swordplay'] = set_combine(sets.Enmity,{hands="Futhark Mitons +1"})
     sets.precast.JA['Embolden'] = set_combine(sets.Enmity,{})
     sets.precast.JA['One For All'] = set_combine(sets.Enmity,{})
@@ -87,10 +87,10 @@ function init_gear_sets()
     sets.precast.JA['Valiance'].DT = sets.precast.JA['Vallation'].DT
     sets.precast.JA['Pflug'].DT = set_combine(sets.Enmity.DT,{feet="Runeist's Boots +3"})
     sets.precast.JA['Battuta'].DT = set_combine(sets.Enmity.DT,{head="Futhark Bandeau +1"})
-    sets.precast.JA['Liement'].DT = set_combine(sets.Enmity.DT,{body="Futhark Coat +1"})
+    sets.precast.JA['Liement'].DT = set_combine(sets.Enmity.DT,{body="Futhark Coat +2"})
     sets.precast.JA['Gambit'].DT = set_combine(sets.Enmity.DT,{hands="Runeist's Mitons +3"})
     sets.precast.JA['Rayke'].DT = set_combine(sets.Enmity.DT,{feet="Futhark Boots +1"})
-    sets.precast.JA['Elemental Sforzo'].DT = set_combine(sets.Enmity.DT,{body="Futhark Coat +1"})
+    sets.precast.JA['Elemental Sforzo'].DT = set_combine(sets.Enmity.DT,{body="Futhark Coat +2"})
     sets.precast.JA['Swordplay'].DT = set_combine(sets.Enmity.DT,{hands="Futhark Mitons +1"})
     sets.precast.JA['Embolden'].DT = set_combine(sets.Enmity.DT,{})
     sets.precast.JA['One For All'].DT = set_combine(sets.Enmity.DT,{})
@@ -152,7 +152,7 @@ function init_gear_sets()
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
 
 	-- Weaponskill sets
-	sets.precast.WS = {ammo="Amar Cluster",
+	sets.precast.WS = {ammo="Knobkierrie",
             head="Adhemar Bonnet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
             body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.da_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
@@ -173,13 +173,13 @@ function init_gear_sets()
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
             back=gear.stp_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
-    sets.precast.WS['Resolution'] = set_combine(sets.precast.WS,{ammo="Floestone"})
+    sets.precast.WS['Resolution'] = set_combine(sets.precast.WS,{})
     sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc,{})
     sets.precast.WS['Resolution'].HighAcc = set_combine(sets.precast.WS.HighAcc,{})
 	sets.precast.WS['Resolution'].FullAcc = set_combine(sets.precast.WS.FullAcc,{})
 
-    sets.precast.WS['Dimidiation'] = set_combine(sets.precast.WS,{legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
-    sets.precast.WS['Dimidiation'].Acc = set_combine(sets.precast.WS.Acc,{head="Adhemar Bonnet",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
+    sets.precast.WS['Dimidiation'] = set_combine(sets.precast.WS,{ back=gear.stp_jse_back,waist="Grunfeld Rope",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
+    sets.precast.WS['Dimidiation'].Acc = set_combine(sets.precast.WS.Acc,{back=gear.stp_jse_back,waist="Grunfeld Rope",legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Dimidiation'].HighAcc = set_combine(sets.precast.WS.HighAcc,{legs=gear.herculean_wsd_legs,feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Dimidiation'].FullAcc = set_combine(sets.precast.WS.FullAcc,{})
 	
@@ -239,7 +239,7 @@ function init_gear_sets()
 
     sets.idle = {ammo='Homiliary',
 		head="Rawhide Mask",neck="Twilight torque",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Futhark Coat +1",hands="Aya. Manopolas +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
+		body="Futhark Coat +2",hands="Aya. Manopolas +2",ring1="Gelatinous Ring +1",ring2="Defending Ring",
 		back="Solemnity Cape",waist="Flume Belt",legs="Aya. Cosciales +1",feet=gear.herculean_refresh_feet}
 		
     sets.idle.Sphere = set_combine(sets.idle,{body="Mekosu. Harness"})
@@ -251,7 +251,7 @@ function init_gear_sets()
 		
 	sets.idle.KiteTank = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Vim Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-        body="Futhark Coat +1",hands="Aya. Manopolas +2", ring1="Gelatinous Ring +1",ring2="Defending Ring",
+        body="Futhark Coat +2",hands="Aya. Manopolas +2", ring1="Gelatinous Ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Hippo. Socks +1"}
 
 	sets.idle.Weak = {ammo='Homiliary',
@@ -279,7 +279,7 @@ function init_gear_sets()
 	
 	sets.defense.PDT = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Twilight torque",ear1="Genmei Earring",ear2="Ethereal Earring",
-        body="Futhark Coat +1",hands="Aya. Manopolas +2", ring1="Gelatinous ring +1",ring2="Defending Ring",
+        body="Futhark Coat +2",hands="Aya. Manopolas +2", ring1="Gelatinous ring +1",ring2="Defending Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Eri. Leg Guards +1",feet="Erilaz Greaves +1"}
 	sets.defense.PDT_HP = {ammo="Staunch Tathlum",
         head="Fu. Bandeau +1",neck="Twilight torque",ear1="Odnowa Earring +1",ear2="Odnowa Earring",
@@ -337,11 +337,11 @@ function init_gear_sets()
 	--------------------------------------
 
     sets.engaged = {ammo="Ginsen",
-            head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Sherida Earring",
+            head="Adhemar Bonnet +1",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
             body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
     sets.engaged.SomeAcc = {ammo="Ginsen",
-            head="Adhemar Bonnet",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
+            head="Adhemar Bonnet",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
 	sets.engaged.Acc = {ammo="Falcon Eye",
@@ -356,10 +356,10 @@ function init_gear_sets()
             head="Aya. Zucchetto +2",neck="Subtlety Spec.",ear1="Cessance Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Rajas Ring",ring2="Apate Ring",
             back=gear.stp_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
-    sets.engaged.DTLite = {ammo="Ginsen",
-            head="Aya. Zucchetto +2",neck="Anu Torque",ear1="Brutal Earring",ear2="Sherida Earring",
-            body="Ayanmo Corazza +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
-            back=gear.stp_jse_back,waist="Grunfeld Rope",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
+    sets.engaged.DTLite = {ammo="Yamarang",
+            head="Aya. Zucchetto +2",neck="Anu Torque",ear1="Cessance Earring",ear2="Sherida Earring",
+            body="Futhark Coat +2",hands="Meg. Gloves +2",ring1="Moonbeam Ring",ring2="Defending Ring",
+            back=gear.stp_jse_back,waist="Ioskeha Belt +1",legs="Meg. Chausses +2",feet=gear.herculean_ta_feet}
     sets.engaged.SomeAcc.DTLite = {ammo="Falcon Eye",
             head="Aya. Zucchetto +2",neck="Twilight torque",ear1="Sherida Earring",ear2="Sherida Earring",
             body="Ayanmo Corazza +2",hands="Adhemar Wrist. +1",ring1="Gelatinous Ring +1",ring2="Patricius Ring",

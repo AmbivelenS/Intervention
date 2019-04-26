@@ -53,6 +53,9 @@ state.CancelStoneskin = M(true, 'Cancel Stone Skin') --Set this to false if you 
 	~ = Shift Key
 	# = Apps Key
 ]]
+--equipviewer
+send_command('alias eqv lua l equipviewer; equipviewer pos 880 785')
+
 --Ring Commands
 send_command('alias warp input //gs disable ring1; input /equip ring1 "Warp Ring"; wait 10; input /item "Warp Ring" <me>; wait 2; input //gs enable ring1')
 
@@ -65,6 +68,8 @@ send_command('alias acher input //powder acheron')
 send_command('alias sellacher input //sellnpc Acheron Shield')
 
 --Warps
+send_command('alias bp02 input //hp warp Port Bastok 2')
+
 --Bastok
 send_command('alias bm03 input //hp warp Bastok Markets 3')
 send_command('alias bm04 input //hp warp Bastok Markets 4')

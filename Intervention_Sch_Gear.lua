@@ -83,7 +83,7 @@ function init_gear_sets()
 	sets.RecoverMP = {body="Seidr Cotehardie"}
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {main="Akademos",neck="Mizu. Kubikazari",hands="Jhakri Cuffs +2",ring1="Mujin Band",ring2="Locus Ring",feet=gear.merlinic_burst_feet}
+    sets.MagicBurst = {main="Akademos",neck="Mizu. Kubikazari",back="Seshaw Cape",hands="Jhakri Cuffs +2",ring1="Mujin Band",ring2="Locus Ring",feet=gear.merlinic_burst_feet}
 	
 	-- Gear for specific elemental nukes.
 	sets.element.Wind = {main="Marin Staff +1"}
